@@ -25,11 +25,13 @@ export default function Survey({ inst, config, sess, onReady, onLogout, foot }) 
   const [errors, setErrors] = useState({})
   const [glossOpen, setGlossOpen] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [confirmOpen, setConfirmOpen] = useState(false)
   const [fCount, setFCount] = useState(1)
   const [fTab, setFTab] = useState(1)
   const gl = useGlossary(inst.glossary)
   const dirty = useRef(false)
   const ansRef = useRef(ans)
+  const paneRef = useRef(null)
   ansRef.current = ans
 
   const secs = useMemo(() => Object.fromEntries(inst.sections.map(s => [s.id, s])), [inst])
@@ -108,7 +110,15 @@ export default function Survey({ inst, config, sess, onReady, onLogout, foot }) 
       return next
     })
   }
-  const go = s => { setStep(s); store.set(STEP_KEY, s); setMenuOpen(false); window.scrollTo(0, 0) }
+  const go = s => {
+    setStep(s)
+    store.set(STEP_KEY, s)
+    setMenuOpen(false)
+    requestAnimationFrame(() => {
+      if (paneRef.current) paneRef.current.scrollTop = 0
+      else window.scrollTo(0, 0)
+    })
+  }
 
   useEffect(() => {
     if (!menuOpen) return
@@ -117,6 +127,13 @@ export default function Survey({ inst, config, sess, onReady, onLogout, foot }) 
     document.body.style.overflow = 'hidden'
     return () => { removeEventListener('keydown', onKey); document.body.style.overflow = '' }
   }, [menuOpen])
+
+  useEffect(() => {
+    if (!confirmOpen) return
+    const onKey = e => { if (e.key === 'Escape') setConfirmOpen(false) }
+    addEventListener('keydown', onKey)
+    return () => removeEventListener('keydown', onKey)
+  }, [confirmOpen])
 
   if (!sess || !me) return (
     <div className="content-pane">
@@ -134,14 +151,18 @@ export default function Survey({ inst, config, sess, onReady, onLogout, foot }) 
   const stepLabel = step === 'DEC' ? 'Declaration and submit' : step === 'done' ? 'Your results profile' : (secs[step]?.title || 'Survey')
   const stepCode = step === 'DEC' ? '✓' : step === 'done' ? '★' : step
 
-  async function submit() {
+  function requestSubmit() {
     if (isSubmitted) return
     setErrors({})
     const local = {}
     if (ans.DEC1 !== true) local.DEC1 = 'Please confirm the respondent declaration.'
     if (Object.keys(local).length) { setErrors(local); return }
-    const ok = window.confirm('Submit this response as final?\n\nAfter submission you will not be able to edit your answers. Use Save draft if you still need to make changes.')
-    if (!ok) return
+    setConfirmOpen(true)
+  }
+
+  async function confirmSubmit() {
+    if (isSubmitted) return
+    setConfirmOpen(false)
     setSaving(true)
     try {
       await api.submit(sess.code, ans, ans.DEC3 === 1 ? ans._contact : undefined)
@@ -241,12 +262,12 @@ export default function Survey({ inst, config, sess, onReady, onLogout, foot }) 
       </div>
       {menuOpen && <button type="button" className="menu-backdrop" aria-label="Close menu" onClick={() => setMenuOpen(false)} />}
       {rail}
-      <div className="content-pane">
+      <div className="content-pane" ref={paneRef}>
         <main>
           {!isSubmitted && <p className="draft-banner">Working draft — save anytime to continue later with your resume code. Final submit locks the response permanently.</p>}
           {secs[step] && <Section s={secs[step]} items={itemsOf(step)} ans={ans} setA={setA} inst={inst} errors={errors}
             locked={isSubmitted} fCount={fCount} setFCount={setFCount} fTab={fTab} setFTab={setFTab} />}
-          {step === 'DEC' && <Declaration inst={inst} ans={ans} setA={setA} errors={errors} onSubmit={submit} onSaveDraft={() => saveDraft()} saving={saving} locked={isSubmitted} />}
+          {step === 'DEC' && <Declaration inst={inst} ans={ans} setA={setA} errors={errors} onSubmit={requestSubmit} onSaveDraft={() => saveDraft()} saving={saving} locked={isSubmitted} />}
           {step === 'done' && <Results code={sess.code} inst={inst} />}
           {step !== 'done' && <div className="nav">
             <button className="ghost" disabled={idx <= 0} onClick={() => go(order[idx - 1])}>Back</button>
@@ -260,6 +281,30 @@ export default function Survey({ inst, config, sess, onReady, onLogout, foot }) 
       </div>
     </div>
     {glossOpen && <GlossaryPanel glossary={inst.glossary} onClose={() => setGlossOpen(false)} />}
+    {confirmOpen && (
+      <div className="modal-backdrop" role="presentation" onClick={() => !saving && setConfirmOpen(false)}>
+        <div
+          className="modal"
+          role="alertdialog"
+          aria-modal="true"
+          aria-labelledby="submit-title"
+          aria-describedby="submit-desc"
+          onClick={e => e.stopPropagation()}
+        >
+          <p className="kicker">Final submission</p>
+          <h2 id="submit-title">Submit this response as final?</h2>
+          <p id="submit-desc" className="note">
+            After submission you will not be able to edit your answers. Use <b>Save draft</b> if you still need to make changes.
+          </p>
+          <div className="modal-actions">
+            <button type="button" className="ghost" disabled={saving} onClick={() => setConfirmOpen(false)}>Cancel</button>
+            <button type="button" className="primary" disabled={saving} onClick={confirmSubmit}>
+              {saving ? 'Submitting…' : 'Submit final response'}
+            </button>
+          </div>
+        </div>
+      </div>
+    )}
   </GlossaryCtx.Provider>)
 }
 

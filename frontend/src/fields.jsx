@@ -15,6 +15,20 @@ export function answered(q, v) {
   return true
 }
 
+function ClearBtn({ show, onClear }) {
+  return (
+    <button
+      type="button"
+      className="clear"
+      hidden={!show}
+      tabIndex={show ? 0 : -1}
+      onClick={onClear}
+    >
+      Clear
+    </button>
+  )
+}
+
 function Choice({ name, options, value, onChange, compact, label }) {
   const id = useId()
   const signed = options.some(([c]) => typeof c === 'number' && c < 0)
@@ -28,7 +42,7 @@ function Choice({ name, options, value, onChange, compact, label }) {
         <span aria-hidden={compact || undefined}>{compact ? short : text}</span>
       </label>)
     })}
-    <button type="button" className="clear" hidden={empty(value)} tabIndex={empty(value) ? -1 : 0} onClick={() => onChange(undefined)}>Clear</button>
+    <ClearBtn show={!empty(value)} onClear={() => onChange(undefined)} />
   </div>)
 }
 
@@ -37,6 +51,7 @@ function Multi({ options, value = [], onChange, label }) {
   return (<div className="choice" role="group" aria-label={label}>
     {options.map(([c, t]) => (<label key={c} className={value.includes(c) ? 'sel' : ''}>
       <input type="checkbox" className="sr" checked={value.includes(c)} onChange={() => toggle(c)} /><span>{t}</span></label>))}
+    <ClearBtn show={value.length > 0} onClear={() => onChange([])} />
   </div>)
 }
 
@@ -49,15 +64,29 @@ export function isLongText(type, label = '', key = '') {
 
 function TextWithMissing({ value, onChange, long, missing = [], label }) {
   const m = isMissing(value) ? value.m : null
+  const has = !empty(value) || !!m
   const Tag = long ? 'textarea' : 'input'
   return (<div className="txt">
     <Tag aria-label={label} value={m ? '' : (value || '')} disabled={!!m} rows={long ? 4 : undefined}
       onChange={e => onChange(e.target.value)} placeholder={m || !long ? '' : 'Write freely; use evidence identifiers and avoid personal or confidential details'} />
-    {missing.length > 0 && <div className="miss" role="group" aria-label="Or record that the answer is missing">
+    <div className="miss" role="group" aria-label={missing.length ? 'Or record that the answer is missing' : undefined}>
       {missing.map(([c, t]) => (<label key={c} className={m === c ? 'sel' : ''}>
         <input type="checkbox" className="sr" checked={m === c} onChange={() => onChange(m === c ? '' : { m: c })} />{t}</label>))}
-    </div>}
+      <ClearBtn show={has} onClear={() => onChange('')} />
+    </div>
   </div>)
+}
+
+function SelectField({ label, options, value, onChange }) {
+  return (
+    <div className="select-row">
+      <select aria-label={label} value={value ?? ''} onChange={e => onChange(e.target.value === '' ? undefined : +e.target.value)}>
+        <option value="">Select</option>
+        {options.map(([c, l]) => <option key={c} value={c}>{l}</option>)}
+      </select>
+      <ClearBtn show={!empty(value)} onClear={() => onChange(undefined)} />
+    </div>
+  )
 }
 
 function Sub({ f, value, onChange, scales }) {
@@ -65,8 +94,7 @@ function Sub({ f, value, onChange, scales }) {
   if (['change', 'context', 'rating04', 'level'].includes(t))
     return <Choice name={f.key} options={scales[t]} value={value} onChange={onChange} compact label={f.label} />
   if (t === 'single') return f.options.length > 6
-    ? <select aria-label={f.label} value={value ?? ''} onChange={e => onChange(e.target.value === '' ? undefined : +e.target.value)}>
-        <option value="">Select</option>{f.options.map(([c, l]) => <option key={c} value={c}>{l}</option>)}</select>
+    ? <SelectField label={f.label} options={f.options} value={value} onChange={onChange} />
     : <Choice name={f.key} options={f.options} value={value} onChange={onChange} label={f.label} />
   if (t === 'check') return <label className="chk"><input type="checkbox" checked={!!value} onChange={e => onChange(e.target.checked)} /> {f.label}</label>
   return <TextWithMissing value={value} onChange={onChange} long={isLongText(t, f.label, f.key)} missing={f.missing} label={f.label} />
@@ -98,7 +126,9 @@ export function Field({ q, value, onChange, scales, error }) {
   let control
   switch (q.type) {
     case 'scale': control = <Choice name={q.id} options={scales.scale} value={value} onChange={onChange} compact label={label} />; break
-    case 'single': control = <Choice name={q.id} options={q.options} value={value} onChange={onChange} label={label} />; break
+    case 'single': control = q.options.length > 6
+      ? <SelectField label={label} options={q.options} value={value} onChange={onChange} />
+      : <Choice name={q.id} options={q.options} value={value} onChange={onChange} label={label} />; break
     case 'multi': control = <Multi options={q.options} value={value} onChange={onChange} label={label} />; break
     case 'single_text': control = (<div className="q-stack">
       <Choice name={q.id} options={q.options} value={value?.code} onChange={c => onChange(c === undefined ? undefined : { ...value, code: c })} label={label} />
@@ -106,8 +136,13 @@ export function Field({ q, value, onChange, scales, error }) {
     </div>); break
     case 'daterange': control = (<div className="dr">
       <label>From<input type="date" value={value?.from || ''} onChange={e => onChange({ ...value, from: e.target.value })} /></label>
-      <label>To<input type="date" value={value?.to || ''} onChange={e => onChange({ ...value, to: e.target.value })} /></label></div>); break
-    case 'date': control = <input type="date" aria-label={label} value={value || ''} onChange={e => onChange(e.target.value)} />; break
+      <label>To<input type="date" value={value?.to || ''} onChange={e => onChange({ ...value, to: e.target.value })} /></label>
+      <ClearBtn show={!!(value?.from || value?.to)} onClear={() => onChange(undefined)} />
+    </div>); break
+    case 'date': control = (<div className="select-row">
+      <input type="date" aria-label={label} value={value || ''} onChange={e => onChange(e.target.value || undefined)} />
+      <ClearBtn show={!empty(value)} onClear={() => onChange(undefined)} />
+    </div>); break
     case 'check': control = <label className="chk"><input type="checkbox" checked={!!value} onChange={e => onChange(e.target.checked)} /> {q.label}</label>; break
     case 'group': control = <Group q={q} value={value} onChange={onChange} scales={scales} />; break
     case 'repeat': control = <Repeat q={q} value={value} onChange={onChange} scales={scales} />; break
