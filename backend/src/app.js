@@ -26,6 +26,7 @@ export function createApp({ pool, adminToken = process.env.ADMIN_TOKEN || '',
   consentVersion = process.env.CONSENT_VERSION || '1',
   noticeFile = process.env.PRIVACY_NOTICE_FILE || path.resolve(path.dirname(new URL(import.meta.url).pathname), '../privacy_notice.md'),
   staticDir = process.env.STATIC_DIR } = {}) {
+  if (staticDir) staticDir = path.resolve(staticDir)
   const app = express()
   app.disable('x-powered-by')
   app.set('trust proxy', true)

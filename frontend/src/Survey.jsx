@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+﻿import { useEffect, useMemo, useRef, useState } from 'react'
 import { api, store } from './api.js'
 import { Field, answered } from './fields.jsx'
 import { GlossaryCtx, GlossaryPanel, useGlossary, Rich } from './Glossary.jsx'
@@ -16,7 +16,7 @@ function visible(q, ans) {
   return true
 }
 
-export default function Survey({ inst, config, sess, onReady, onLogout }) {
+export default function Survey({ inst, config, sess, onReady, onLogout, foot }) {
   const [me, setMe] = useState(null)
   const [ans, setAns] = useState({})
   const [step, setStep] = useState('welcome')
@@ -81,9 +81,32 @@ export default function Survey({ inst, config, sess, onReady, onLogout }) {
 
   const setA = (k, v) => {
     if (isSubmitted) return
+    let nextVal = v
+    if (/^I\d+$/.test(k) && nextVal && typeof nextVal === 'object' && nextVal.top3) {
+      const others = Object.entries(ansRef.current)
+        .filter(([key, val]) => key !== k && /^I\d+$/.test(key) && val && typeof val === 'object' && val.top3).length
+      if (others >= 3) {
+        nextVal = { ...nextVal, top3: false }
+        setErrors(prev => ({
+          ...prev,
+          [k]: 'You already marked 3 barriers as Top 3. Uncheck one of them first, then you can select this one.',
+        }))
+        dirty.current = true
+        setSaveState('Unsaved changes')
+        setAns(p => ({ ...p, [k]: nextVal }))
+        return
+      }
+    }
     dirty.current = true
     setSaveState('Unsaved changes')
-    setAns(p => { const n = { ...p }; if (v === undefined) delete n[k]; else n[k] = v; return n })
+    setAns(p => { const n = { ...p }; if (nextVal === undefined) delete n[k]; else n[k] = nextVal; return n })
+    setErrors(prev => {
+      if (!Object.keys(prev).length) return prev
+      const next = { ...prev }
+      delete next[k]
+      if (/^I\d+/.test(k)) delete next.I1
+      return next
+    })
   }
   const go = s => { setStep(s); store.set(STEP_KEY, s); setMenuOpen(false); window.scrollTo(0, 0) }
 
@@ -95,7 +118,12 @@ export default function Survey({ inst, config, sess, onReady, onLogout }) {
     return () => { removeEventListener('keydown', onKey); document.body.style.overflow = '' }
   }, [menuOpen])
 
-  if (!sess || !me) return <Welcome inst={inst} config={config} onReady={onReady} />
+  if (!sess || !me) return (
+    <div className="content-pane">
+      <Welcome inst={inst} config={config} onReady={onReady} />
+      {foot}
+    </div>
+  )
 
   const order = [...mods, 'DEC']
   const idx = order.indexOf(step)
@@ -137,28 +165,62 @@ export default function Survey({ inst, config, sess, onReady, onLogout }) {
   const rail = (
     <nav id="survey-menu" className={'rail' + (menuOpen ? ' open' : '')} aria-label="Survey modules">
       <div className="rail-head">
-        <p className="rail-t">{role.name}<br /><span>Organization {me.org_code} · Respondent {me.respondent_code}</span></p>
+        <div className="rail-identity">
+          <p className="rail-role">{role.name}</p>
+          <p className="rail-meta">
+            <span>{me.org_code}</span>
+            <span aria-hidden="true">·</span>
+            <span>{me.respondent_code}</span>
+          </p>
+          <span className={'status-pill ' + (isSubmitted ? 'submitted' : 'draft')}>
+            {isSubmitted ? 'Submitted · locked' : 'Draft · editable'}
+          </span>
+        </div>
         <button type="button" className="rail-close" aria-label="Close menu" onClick={() => setMenuOpen(false)}>
           <span aria-hidden="true">×</span>
         </button>
       </div>
-      <p className={'status-pill ' + (isSubmitted ? 'submitted' : 'draft')}>{isSubmitted ? 'Submitted · locked' : 'Draft · editable'}</p>
+
       <div className="rail-scroll">
         {order.map(m => {
           const [d, t] = m === 'DEC' ? [ans.DEC1 ? 1 : 0, 1] : progress(m)
-          return (<button key={m} className={step === m ? 'on' : ''} aria-current={step === m ? 'step' : undefined} onClick={() => go(m)}>
-            <b>{m === 'DEC' ? '✓' : m}</b><span>{m === 'DEC' ? 'Declaration and submit' : secs[m].title}</span><em>{d}/{t}</em></button>)
+          return (
+            <button
+              key={m}
+              type="button"
+              className={'rail-step' + (step === m ? ' on' : '')}
+              aria-current={step === m ? 'step' : undefined}
+              onClick={() => go(m)}
+            >
+              <b>{m === 'DEC' ? '✓' : m}</b>
+              <span>{m === 'DEC' ? 'Declaration and submit' : secs[m].title}</span>
+              <em>{d}/{t}</em>
+            </button>
+          )
         })}
-        {isSubmitted && <button className={step === 'done' ? 'on' : ''} onClick={() => go('done')}><b>★</b><span>Your results profile</span></button>}
+        {isSubmitted && (
+          <button type="button" className={'rail-step' + (step === 'done' ? ' on' : '')} onClick={() => go('done')}>
+            <b>★</b><span>Your results profile</span>
+          </button>
+        )}
       </div>
+
       <div className="rail-f">
-        {!isSubmitted && <button type="button" className="rail-save" disabled={saving} onClick={() => saveDraft()}>
-          <b>⬇</b><span>{saving ? 'Saving…' : 'Save draft'}</span>
-        </button>}
-        <button type="button" onClick={() => { setMenuOpen(false); setGlossOpen(true) }}><b>?</b><span>Glossary</span></button>
-        <button type="button" onClick={() => onLogout?.()}><b>×</b><span>Log out</span></button>
-        <p className="save" aria-live="polite">{isSubmitted ? 'Submitted — no further edits' : (saveState || 'Draft ready to edit')}</p>
-        <p className="resume">Resume code: <code>{sess.code}</code></p>
+        {!isSubmitted && (
+          <button type="button" className="rail-save" disabled={saving} onClick={() => saveDraft()}>
+            {saving ? 'Saving…' : 'Save draft'}
+          </button>
+        )}
+        <button type="button" className="rail-gloss" onClick={() => { setMenuOpen(false); setGlossOpen(true) }}>
+          Glossary
+        </button>
+        <p className="rail-save-state" aria-live="polite">
+          {isSubmitted ? 'Submitted — no further edits' : (saveState || 'Draft ready to edit')}
+        </p>
+        <p className="rail-resume">Resume code: <code>{sess.code}</code></p>
+        <button type="button" className="rail-logout" onClick={() => onLogout?.()}>
+          End session
+        </button>
       </div>
     </nav>
   )
@@ -179,20 +241,23 @@ export default function Survey({ inst, config, sess, onReady, onLogout }) {
       </div>
       {menuOpen && <button type="button" className="menu-backdrop" aria-label="Close menu" onClick={() => setMenuOpen(false)} />}
       {rail}
-      <main>
-        {!isSubmitted && <p className="draft-banner">Working draft — save anytime to continue later with your resume code. Final submit locks the response permanently.</p>}
-        {secs[step] && <Section s={secs[step]} items={itemsOf(step)} ans={ans} setA={setA} inst={inst} errors={errors}
-          locked={isSubmitted} fCount={fCount} setFCount={setFCount} fTab={fTab} setFTab={setFTab} />}
-        {step === 'DEC' && <Declaration inst={inst} ans={ans} setA={setA} errors={errors} onSubmit={submit} onSaveDraft={() => saveDraft()} saving={saving} locked={isSubmitted} />}
-        {step === 'done' && <Results code={sess.code} inst={inst} />}
-        {step !== 'done' && <div className="nav">
-          <button className="ghost" disabled={idx <= 0} onClick={() => go(order[idx - 1])}>Back</button>
-          <div className="nav-actions">
-            {!isSubmitted && <button type="button" className="ghost" disabled={saving} onClick={() => saveDraft()}>{saving ? 'Saving…' : 'Save draft'}</button>}
-            {step !== 'DEC' && <button className="primary" onClick={() => go(order[idx + 1])}>Continue</button>}
-          </div>
-        </div>}
-      </main>
+      <div className="content-pane">
+        <main>
+          {!isSubmitted && <p className="draft-banner">Working draft — save anytime to continue later with your resume code. Final submit locks the response permanently.</p>}
+          {secs[step] && <Section s={secs[step]} items={itemsOf(step)} ans={ans} setA={setA} inst={inst} errors={errors}
+            locked={isSubmitted} fCount={fCount} setFCount={setFCount} fTab={fTab} setFTab={setFTab} />}
+          {step === 'DEC' && <Declaration inst={inst} ans={ans} setA={setA} errors={errors} onSubmit={submit} onSaveDraft={() => saveDraft()} saving={saving} locked={isSubmitted} />}
+          {step === 'done' && <Results code={sess.code} inst={inst} />}
+          {step !== 'done' && <div className="nav">
+            <button className="ghost" disabled={idx <= 0} onClick={() => go(order[idx - 1])}>Back</button>
+            <div className="nav-actions">
+              {!isSubmitted && <button type="button" className="ghost" disabled={saving} onClick={() => saveDraft()}>{saving ? 'Saving…' : 'Save draft'}</button>}
+              {step !== 'DEC' && <button className="primary" onClick={() => go(order[idx + 1])}>Continue</button>}
+            </div>
+          </div>}
+        </main>
+        {foot}
+      </div>
     </div>
     {glossOpen && <GlossaryPanel glossary={inst.glossary} onClose={() => setGlossOpen(false)} />}
   </GlossaryCtx.Provider>)
@@ -207,7 +272,7 @@ function Section({ s, items, ans, setA, inst, errors, locked, fCount, setFCount,
   const render = id => {
     const q = byId[id]
     if (!visible(q, ans)) return null
-    if (id === 'A1' || id === 'A2') return (<div key={id} className="q fixed"><span className="id">{id}</span>{q.text}: <b>{id === 'A1' ? ans.A1 : inst.roles[String(ans.A2)].name}</b></div>)
+    if (id === 'A1' || id === 'A2') return (<div key={id} className="q fixed"><span className="id">{id}</span><span className="qt">{q.text}: <b>{id === 'A1' ? ans.A1 : inst.roles[String(ans.A2)].name}</b></span></div>)
     const k = keyFor(id, n)
     return <Field key={k} q={q} value={ans[k]} onChange={v => setA(k, v)} scales={inst.scales} error={errors[id]} />
   }
@@ -271,11 +336,15 @@ function Welcome({ inst, config, onReady }) {
   const [err, setErr] = useState('')
   const [issued, setIssued] = useState(null)
   const [busy, setBusy] = useState(false)
+  const [copied, setCopied] = useState(false)
+  const copyTimer = useRef(null)
   const set = p => setF(x => ({ ...x, ...p }))
+
+  useEffect(() => () => { if (copyTimer.current) clearTimeout(copyTimer.current) }, [])
 
   async function start(e) {
     e.preventDefault(); setErr(''); setBusy(true)
-    try { const r = await api.start({ org_code: f.org.trim(), role: +f.role, consent: f.consent }); setIssued(r) }
+    try { const r = await api.start({ org_code: f.org.trim(), role: +f.role, consent: f.consent }); setIssued(r); setCopied(false) }
     catch (x) { setErr(x.message) } finally { setBusy(false) }
   }
   async function resume(e) {
@@ -283,12 +352,22 @@ function Welcome({ inst, config, onReady }) {
     try { await api.me(f.code.trim()); onReady({ code: f.code.trim().toUpperCase() }) }
     catch (x) { setErr(x.message) } finally { setBusy(false) }
   }
+  async function copyCode() {
+    try { await navigator.clipboard.writeText(issued.resume_code) } catch { /* ignore */ }
+    setCopied(true)
+    if (copyTimer.current) clearTimeout(copyTimer.current)
+    copyTimer.current = setTimeout(() => setCopied(false), 1800)
+  }
 
   if (issued) return (<main className="solo"><section className="hero">
     <h1>Keep your resume code</h1>
     <p className="lead">Your response starts as an editable draft. Save anytime, then resume from any device with this code. Final submission locks answers permanently.</p>
-    <p className="code-big" aria-label="Resume code">{issued.resume_code}</p>
-    <button className="ghost" onClick={() => navigator.clipboard?.writeText(issued.resume_code)}>Copy code</button>
+    <div className={'code-row' + (copied ? ' copied' : '')}>
+      <p className="code-big" aria-label="Resume code">{issued.resume_code}</p>
+      <button type="button" className={'copy-btn' + (copied ? ' ok' : '')} onClick={copyCode} aria-live="polite">
+        <span className="copy-label">{copied ? 'Copied' : 'Copy code'}</span>
+      </button>
+    </div>
     <p className="note">Your respondent code is {issued.respondent_code}. It links your answers to your organization without your name.</p>
     <button className="primary" onClick={() => onReady({ code: issued.resume_code })}>I have noted it — begin</button>
   </section></main>)

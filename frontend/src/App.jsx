@@ -46,6 +46,12 @@ export default function App() {
     setSurveySess(null)
   }
 
+  const foot = (
+    <footer className="foot">
+      GInI Innovation Implementation Impact Survey · instrument v{inst?.version}
+    </footer>
+  )
+
   return (<div className="app">
     <a className="skip" href="#main-content">Skip to content</a>
     <header className="top">
@@ -54,22 +60,13 @@ export default function App() {
         <span className="rule" />
         <img src="/gini.png" alt="Global Innovation Institute" />
       </div>
-      <div className="app-nav">
-        {!isAdmin && surveySess?.code && (
-          <button type="button" className="ghost sm nav-out" onClick={onSurveyLogout}>Log out</button>
-        )}
-        {isAdmin && adminToken && (
-          <button type="button" className="ghost sm nav-out" onClick={onAdminLogout}>Log out</button>
-        )}
-      </div>
       <div className="diamonds" aria-hidden="true"><i /><i /><i className="gold" /><i /></div>
     </header>
-    <div id="main-content">
-      {err && <main className="solo"><p className="errmsg">Could not reach the survey service: {err}</p></main>}
+    <div id="main-content" className="shell">
+      {err && <div className="content-pane"><main className="solo"><p className="errmsg">Could not reach the survey service: {err}</p></main>{foot}</div>}
       {inst && (isAdmin
-        ? <Admin inst={inst} token={adminToken} onLogin={onAdminLogin} onLogout={onAdminLogout} />
-        : <Survey inst={inst} config={config} sess={surveySess} onReady={onSurveyReady} onLogout={onSurveyLogout} />)}
+        ? <div className="content-pane"><Admin inst={inst} token={adminToken} onLogin={onAdminLogin} onLogout={onAdminLogout} />{foot}</div>
+        : <Survey inst={inst} config={config} sess={surveySess} onReady={onSurveyReady} onLogout={onSurveyLogout} foot={foot} />)}
     </div>
-    <footer className="foot">GInI Innovation Implementation Impact Survey · instrument v{inst?.version}</footer>
   </div>)
 }

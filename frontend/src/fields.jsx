@@ -28,7 +28,7 @@ function Choice({ name, options, value, onChange, compact, label }) {
         <span aria-hidden={compact || undefined}>{compact ? short : text}</span>
       </label>)
     })}
-    {!empty(value) && <button type="button" className="clear" onClick={() => onChange(undefined)}>Clear</button>}
+    <button type="button" className="clear" hidden={empty(value)} tabIndex={empty(value) ? -1 : 0} onClick={() => onChange(undefined)}>Clear</button>
   </div>)
 }
 
@@ -100,10 +100,10 @@ export function Field({ q, value, onChange, scales, error }) {
     case 'scale': control = <Choice name={q.id} options={scales.scale} value={value} onChange={onChange} compact label={label} />; break
     case 'single': control = <Choice name={q.id} options={q.options} value={value} onChange={onChange} label={label} />; break
     case 'multi': control = <Multi options={q.options} value={value} onChange={onChange} label={label} />; break
-    case 'single_text': control = (<>
+    case 'single_text': control = (<div className="q-stack">
       <Choice name={q.id} options={q.options} value={value?.code} onChange={c => onChange(c === undefined ? undefined : { ...value, code: c })} label={label} />
       {q.detail_when.includes(value?.code) && <TextWithMissing long label={q.detail_label} value={value?.detail} onChange={d => onChange({ ...value, detail: d })} />}
-    </>); break
+    </div>); break
     case 'daterange': control = (<div className="dr">
       <label>From<input type="date" value={value?.from || ''} onChange={e => onChange({ ...value, from: e.target.value })} /></label>
       <label>To<input type="date" value={value?.to || ''} onChange={e => onChange({ ...value, to: e.target.value })} /></label></div>); break
@@ -113,10 +113,15 @@ export function Field({ q, value, onChange, scales, error }) {
     case 'repeat': control = <Repeat q={q} value={value} onChange={onChange} scales={scales} />; break
     default: control = <TextWithMissing value={value} onChange={onChange} long={isLongText(q.type, q.text, q.id)} missing={q.missing} label={label} />
   }
-  return (<fieldset id={'q-' + q.id} className={'q q-' + q.type + (done ? ' done' : '') + (error ? ' err' : '')}>
-    <legend><span className="id">{q.id}</span><span className="qt"><Rich text={q.text} /></span></legend>
-    {q.hint && <p className="hint"><Rich text={q.hint} /></p>}
-    {control}
-    {error && <p className="errmsg" role="alert">{error}</p>}
-  </fieldset>)
+  return (
+    <div id={'q-' + q.id} className={'q q-' + q.type + (done ? ' done' : '') + (error ? ' err' : '')} role="group" aria-labelledby={'ql-' + q.id}>
+      <div className="q-head" id={'ql-' + q.id}>
+        <span className="id">{q.id}</span>
+        <span className="qt"><Rich text={q.text} /></span>
+      </div>
+      {q.hint && <p className="hint"><Rich text={q.hint} /></p>}
+      <div className="q-body">{control}</div>
+      {error && <p className="errmsg" role="alert">{error}</p>}
+    </div>
+  )
 }
