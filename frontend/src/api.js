@@ -22,6 +22,8 @@ export const admin = {
   status: (t, code, status) => call('PATCH', `/api/admin/orgs/${encodeURIComponent(code)}`, { headers: au(t), body: { status } }),
   report: (t, code, drafts) => call('GET', `/api/admin/orgs/${encodeURIComponent(code)}/report?include_drafts=${!!drafts}`, { headers: au(t) }),
   rate: (t, code, body) => call('PUT', `/api/admin/orgs/${encodeURIComponent(code)}/ratings`, { headers: au(t), body }),
+  getPrivacy: t => call('GET', '/api/admin/privacy-notice', { headers: au(t) }),
+  savePrivacy: (t, privacy_notice) => call('PUT', '/api/admin/privacy-notice', { headers: au(t), body: { privacy_notice } }),
   async download(t, path, filename) {
     const r = await fetch(path, { headers: au(t) })
     if (!r.ok) throw new Error((await r.json().catch(() => ({}))).detail || 'Download failed')

@@ -35,6 +35,11 @@ const SCHEMA = [
      ratings JSON NOT NULL, note TEXT, updated_at DATETIME(3) NOT NULL,
      UNIQUE KEY uq_rating (org_code, kind, ref)
    ) CHARACTER SET utf8mb4`,
+  `CREATE TABLE IF NOT EXISTS settings (
+     \`key\` VARCHAR(64) PRIMARY KEY,
+     value LONGTEXT NOT NULL,
+     updated_at DATETIME(3) NOT NULL
+   ) CHARACTER SET utf8mb4`,
 ]
 
 export async function migrate(pool) {

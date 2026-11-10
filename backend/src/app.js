@@ -35,12 +35,21 @@ export function createApp({ pool, adminToken = process.env.ADMIN_TOKEN || '',
 
   const q = async (sql, params = []) => (await pool.query(sql, params))[0]
   const getOrg = async code => rowToOrg((await q('SELECT * FROM organizations WHERE code = ?', [code]))[0])
+  const fileNotice = () => (fs.existsSync(noticeFile) ? fs.readFileSync(noticeFile, 'utf8') : '')
+  const getPrivacyNotice = async () => {
+    const row = (await q('SELECT value FROM settings WHERE `key` = ?', ['privacy_notice']))[0]
+    return row?.value != null ? String(row.value) : fileNotice()
+  }
 
   // ---------------------------------------------------------------- public
   app.get('/api/instrument', (req, res) => res.json(instrument()))
-  app.get('/api/config', (req, res) => res.json({
-    privacy_notice: fs.existsSync(noticeFile) ? fs.readFileSync(noticeFile, 'utf8') : '',
-    consent_version: consentVersion, require_registered_org: requireRegisteredOrg }))
+  app.get('/api/config', wrap(async (req, res) => {
+    res.json({
+      privacy_notice: await getPrivacyNotice(),
+      consent_version: consentVersion,
+      require_registered_org: requireRegisteredOrg,
+    })
+  }))
 
   app.post('/api/responses', wrap(async (req, res) => {
     const { org_code, role: roleCode, consent } = req.body || {}
@@ -148,6 +157,20 @@ export function createApp({ pool, adminToken = process.env.ADMIN_TOKEN || '',
     next()
   }
   const ORG_FIELDS = ['name', 'unit_type', 'sector', 'geography', 'reporting_period', 'boundary', 'intended_external_beneficiaries']
+
+  app.get('/api/admin/privacy-notice', admin, wrap(async (req, res) => {
+    res.json({ privacy_notice: await getPrivacyNotice(), updated_at: (await q('SELECT updated_at FROM settings WHERE `key` = ?', ['privacy_notice']))[0]?.updated_at || null })
+  }))
+
+  app.put('/api/admin/privacy-notice', admin, wrap(async (req, res) => {
+    const text = req.body?.privacy_notice
+    if (typeof text !== 'string' || text.length > 100000) fail(422, 'Invalid privacy notice.')
+    await q(
+      'INSERT INTO settings (`key`, value, updated_at) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE value = VALUES(value), updated_at = VALUES(updated_at)',
+      ['privacy_notice', text, now()],
+    )
+    res.json({ privacy_notice: text, saved_at: now() })
+  }))
 
   app.get('/api/admin/orgs', admin, wrap(async (req, res) => {
     const rows = (await q('SELECT * FROM organizations ORDER BY code')).map(rowToOrg)

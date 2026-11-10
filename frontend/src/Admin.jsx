@@ -64,6 +64,7 @@ function Orgs({ token, orgs, reload, open }) {
           <button className="ghost sm" onClick={() => admin.status(token, o.code, o.status === 'open' ? 'closed' : 'open').then(reload)}>{o.status === 'open' ? 'Close' : 'Reopen'}</button></td></tr>))}
         {orgs.length === 0 && <tr><td colSpan={7} className="muted">No organization codes yet.</td></tr>}</tbody></table>
     <Exports token={token} />
+    <PrivacyNotice token={token} />
     <form className="card" onSubmit={save}><h3>Register or update an organization code</h3>
       <div className="grid">{inp('code', 'Organization code')}{inp('name', 'Name (optional)')}
         <label>Unit of analysis<select value={f.unit_type} onChange={e => setF({ ...f, unit_type: e.target.value })}>
@@ -87,6 +88,44 @@ function Exports({ token, org }) {
     {org && <button className="ghost sm" onClick={() => dl('/api/admin/export/snapshot.json' + q, `gini-frozen-${org}-${new Date().toISOString().slice(0, 10)}.json`)}>Freeze dataset (JSON)</button>}
     {!org && <button className="ghost sm" onClick={() => dl('/api/admin/export/contacts.csv', 'gini-contacts.csv')}>Contact list (separate)</button>}
     {err && <span className="errmsg">{err}</span>}</div>)
+}
+
+function PrivacyNotice({ token }) {
+  const [text, setText] = useState('')
+  const [err, setErr] = useState('')
+  const [ok, setOk] = useState('')
+  const [busy, setBusy] = useState(false)
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    setBusy(true)
+    admin.getPrivacy(token)
+      .then(r => { setText(r.privacy_notice || ''); setLoaded(true) })
+      .catch(e => setErr(e.message))
+      .finally(() => setBusy(false))
+  }, [token])
+
+  const save = async e => {
+    e.preventDefault()
+    setErr(''); setOk(''); setBusy(true)
+    try {
+      await admin.savePrivacy(token, text)
+      setOk('Privacy notice saved. Respondents will see it on the survey start page (refresh if already open).')
+    } catch (x) { setErr(x.message) }
+    finally { setBusy(false) }
+  }
+
+  return (<form className="card" onSubmit={save}>
+    <h3>Privacy notice / policy</h3>
+    <p className="note">This text is shown to respondents before they consent and start the survey. Include data controller, purpose, lawful basis, retention, access, and withdrawal route.</p>
+    <label>Privacy notice
+      <textarea rows={12} value={text} onChange={e => setText(e.target.value)} disabled={!loaded || busy}
+        placeholder="Paste or write the privacy notice respondents must read before consent…" required />
+    </label>
+    {err && <p className="errmsg" role="alert">{err}</p>}
+    {ok && <p className="okline">{ok}</p>}
+    <button className="primary" disabled={busy || !loaded}>{busy ? 'Saving…' : 'Save privacy notice'}</button>
+  </form>)
 }
 
 function Report({ token, code, inst, onBack }) {
