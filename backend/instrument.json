@@ -1,0 +1,5976 @@
+{
+ "version": "1.0.1",
+ "title": "GInI Innovation Implementation Impact Survey",
+ "disclaimer": "Aligned for research use with GInI innovation-management concepts and ISO/ UNDP PAS 53002:2024 guidance. This is not an official GInI assessment, certification instrument, ISO conformity assessment, or substitute for independent assurance.",
+ "sections": [
+  {
+   "id": "A",
+   "title": "Respondent Context and Evidence Readiness",
+   "items": [
+    {
+     "id": "A1",
+     "type": "text",
+     "text": "Organization code supplied by the study administrator",
+     "missing": []
+    },
+    {
+     "id": "A2",
+     "type": "single",
+     "text": "Your primary role, as listed in Role Routing",
+     "options": [
+      [
+       1,
+       "Executive Sponsor"
+      ],
+      [
+       2,
+       "Innovation Lead or Portfolio Owner"
+      ],
+      [
+       3,
+       "Sustainability or Impact Lead"
+      ],
+      [
+       4,
+       "Data, Assurance, or Performance Owner"
+      ],
+      [
+       5,
+       "Independent Evaluator or Analytics Lead"
+      ],
+      [
+       6,
+       "Strategy or Foresight Owner"
+      ],
+      [
+       7,
+       "Affected Stakeholder or Delivery Partner"
+      ],
+      [
+       8,
+       "Other"
+      ]
+     ]
+    },
+    {
+     "id": "A3",
+     "type": "single",
+     "text": "Time in this organization",
+     "options": [
+      [
+       1,
+       "<1"
+      ],
+      [
+       2,
+       "1–2"
+      ],
+      [
+       3,
+       "3–5"
+      ],
+      [
+       4,
+       "6–10"
+      ],
+      [
+       5,
+       ">10 years"
+      ]
+     ]
+    },
+    {
+     "id": "A4",
+     "type": "single",
+     "text": "Your direct involvement in innovation or sustainability decisions",
+     "options": [
+      [
+       1,
+       "None"
+      ],
+      [
+       2,
+       "Occasional"
+      ],
+      [
+       3,
+       "Regular"
+      ],
+      [
+       4,
+       "Accountable"
+      ]
+     ]
+    },
+    {
+     "id": "A5",
+     "type": "single",
+     "text": "Your access to relevant organizational evidence",
+     "options": [
+      [
+       1,
+       "Very limited"
+      ],
+      [
+       2,
+       "Limited"
+      ],
+      [
+       3,
+       "Moderate"
+      ],
+      [
+       4,
+       "Good"
+      ],
+      [
+       5,
+       "Comprehensive"
+      ]
+     ]
+    },
+    {
+     "id": "A6",
+     "type": "single",
+     "text": "Organization type",
+     "options": [
+      [
+       1,
+       "Private"
+      ],
+      [
+       2,
+       "Public-government"
+      ],
+      [
+       3,
+       "Nonprofit"
+      ],
+      [
+       4,
+       "Academic"
+      ],
+      [
+       5,
+       "Hybrid-other"
+      ]
+     ]
+    },
+    {
+     "id": "A7",
+     "type": "text",
+     "text": "Primary sector",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "A8",
+     "type": "text",
+     "text": "Headquarters country and principal operating regions",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "A9",
+     "type": "single",
+     "text": "Approximate workforce",
+     "options": [
+      [
+       1,
+       "<50"
+      ],
+      [
+       2,
+       "50–249"
+      ],
+      [
+       3,
+       "250–999"
+      ],
+      [
+       4,
+       "1,000–4,999"
+      ],
+      [
+       5,
+       "5,000+"
+      ]
+     ]
+    },
+    {
+     "id": "A10",
+     "type": "daterange",
+     "text": "Reporting period covered"
+    },
+    {
+     "id": "A11",
+     "type": "single",
+     "text": "Primary unit assessed",
+     "options": [
+      [
+       1,
+       "Whole organization"
+      ],
+      [
+       2,
+       "Business unit"
+      ],
+      [
+       3,
+       "Agency-ministry"
+      ],
+      [
+       4,
+       "Program-portfolio"
+      ],
+      [
+       5,
+       "Other"
+      ]
+     ]
+    },
+    {
+     "id": "A12",
+     "type": "single",
+     "text": "Confidence in answers",
+     "options": [
+      [
+       0,
+       "0 None"
+      ],
+      [
+       1,
+       "1 Low"
+      ],
+      [
+       2,
+       "2 Moderate"
+      ],
+      [
+       3,
+       "3 High"
+      ],
+      [
+       4,
+       "4 Very high"
+      ]
+     ]
+    },
+    {
+     "id": "A13",
+     "type": "single",
+     "text": "Has the organization defined intended outcomes or results for its innovation program?",
+     "options": [
+      [
+       1,
+       "Yes"
+      ],
+      [
+       2,
+       "Partially"
+      ],
+      [
+       3,
+       "No"
+      ],
+      [
+       "DK",
+       "Don't Know"
+      ]
+     ]
+    },
+    {
+     "id": "A14",
+     "type": "single",
+     "text": "Are innovation-program performance indicators or KPIs formally defined?",
+     "options": [
+      [
+       1,
+       "Yes"
+      ],
+      [
+       2,
+       "Partially"
+      ],
+      [
+       3,
+       "No"
+      ],
+      [
+       "DK",
+       "Don't Know"
+      ]
+     ]
+    },
+    {
+     "id": "A15",
+     "type": "single",
+     "text": "Are baseline data available for at least some important innovation outcomes?",
+     "options": [
+      [
+       1,
+       "Yes"
+      ],
+      [
+       2,
+       "Partially"
+      ],
+      [
+       3,
+       "No"
+      ],
+      [
+       "DK",
+       "Don't Know"
+      ]
+     ]
+    },
+    {
+     "id": "A16",
+     "type": "single",
+     "text": "Are outcomes followed after innovations have been implemented?",
+     "options": [
+      [
+       1,
+       "Routinely"
+      ],
+      [
+       2,
+       "Sometimes"
+      ],
+      [
+       3,
+       "Rarely"
+      ],
+      [
+       4,
+       "No"
+      ],
+      [
+       "DK",
+       "Don't Know"
+      ]
+     ]
+    },
+    {
+     "id": "A17",
+     "type": "single",
+     "text": "Does the organization maintain documented evidence linking innovation activities or initiatives to reported outcomes?",
+     "options": [
+      [
+       1,
+       "Yes"
+      ],
+      [
+       2,
+       "Partially"
+      ],
+      [
+       3,
+       "No"
+      ],
+      [
+       "DK",
+       "Don't Know"
+      ]
+     ]
+    },
+    {
+     "id": "A18",
+     "type": "multi",
+     "text": "What forms of evidence are normally available?",
+     "options": [
+      [
+       1,
+       "Operational"
+      ],
+      [
+       2,
+       "KPI"
+      ],
+      [
+       3,
+       "Financial"
+      ],
+      [
+       4,
+       "Stakeholder feedback"
+      ],
+      [
+       5,
+       "Surveys-interviews"
+      ],
+      [
+       6,
+       "Case studies"
+      ],
+      [
+       7,
+       "Formal evaluations"
+      ],
+      [
+       8,
+       "Comparison"
+      ],
+      [
+       9,
+       "Other"
+      ],
+      [
+       10,
+       "None"
+      ]
+     ]
+    },
+    {
+     "id": "A19",
+     "type": "single",
+     "text": "Does the organization have personnel with responsibility for performance measurement or evaluation?",
+     "options": [
+      [
+       1,
+       "Dedicated"
+      ],
+      [
+       2,
+       "Part of another role"
+      ],
+      [
+       3,
+       "External support"
+      ],
+      [
+       4,
+       "No"
+      ],
+      [
+       "DK",
+       "Don't Know"
+      ]
+     ]
+    },
+    {
+     "id": "A20",
+     "type": "single",
+     "text": "Does the organization have access to research, statistical, or impact-evaluation expertise when required?",
+     "options": [
+      [
+       1,
+       "Internal"
+      ],
+      [
+       2,
+       "External"
+      ],
+      [
+       3,
+       "Both"
+      ],
+      [
+       4,
+       "Limited"
+      ],
+      [
+       5,
+       "None"
+      ],
+      [
+       "DK",
+       "Don't Know"
+      ]
+     ]
+    },
+    {
+     "id": "A21",
+     "type": "single",
+     "text": "What is the strongest evaluation approach normally available?",
+     "options": [
+      [
+       1,
+       "Observation"
+      ],
+      [
+       2,
+       "Documented qualitative"
+      ],
+      [
+       3,
+       "Before-after"
+      ],
+      [
+       4,
+       "Trend"
+      ],
+      [
+       5,
+       "Comparison"
+      ],
+      [
+       6,
+       "Experimental-quasi-experimental"
+      ],
+      [
+       "DK",
+       "Don't Know"
+      ]
+     ]
+    },
+    {
+     "id": "A22",
+     "type": "single_text",
+     "text": "Material limitations affecting ability to measure innovation impact?",
+     "options": [
+      [
+       1,
+       "No"
+      ],
+      [
+       2,
+       "Yes – describe"
+      ]
+     ],
+     "detail_when": [
+      2
+     ],
+     "detail_label": "Describe the limitations"
+    }
+   ],
+   "groups": [
+    {
+     "title": "A.1 Respondent and Organization Profile",
+     "items": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "A11",
+      "A12"
+     ]
+    },
+    {
+     "title": "A.2 Evidence and Evaluation Readiness",
+     "note": "This diagnostic establishes what evidence and evaluation capability is actually available. It does not score innovation maturity.",
+     "items": [
+      "A13",
+      "A14",
+      "A15",
+      "A16",
+      "A17",
+      "A18",
+      "A19",
+      "A20",
+      "A21",
+      "A22"
+     ]
+    }
+   ],
+   "show_evidence_scale": true
+  },
+  {
+   "id": "B",
+   "title": "GInI Implementation: Reach, Intensity, and Fidelity",
+   "intro": "Plain-language guide: This section asks how widely the GInI-aligned approach has been implemented (reach), how much implementation support was provided (intensity), and how closely implementation followed the intended approach (fidelity). Adaptations are intentional changes made to fit local needs or conditions.",
+   "items": [
+    {
+     "id": "B1",
+     "type": "text",
+     "text": "Current implementation status",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "B2",
+     "type": "textarea",
+     "text": "Formal start date and dates of major rollout phases",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "B3",
+     "type": "textarea",
+     "text": "GInI-aligned elements implemented",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "B4",
+     "type": "textarea",
+     "text": "Any independent CInOrg or CGInO assessment: scheme, date, assessor, and scope",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "hint": "Record CInOrg (private-sector scheme) and CGInO (government scheme) separately."
+    },
+    {
+     "id": "B5",
+     "type": "scale",
+     "text": "The intended units, roles, and population received the planned implementation exposure."
+    },
+    {
+     "id": "B6",
+     "type": "scale",
+     "text": "Role-appropriate training, coaching, tools, and implementation support were delivered at the planned intensity."
+    },
+    {
+     "id": "B7",
+     "type": "scale",
+     "text": "GInI-aligned strategy, governance, processes, and metrics are used in actual material decisions."
+    },
+    {
+     "id": "B8",
+     "type": "scale",
+     "text": "Resources, authority, and leadership attention were sufficient to implement the approach as intended."
+    },
+    {
+     "id": "B9",
+     "type": "scale",
+     "text": "Implementation dates, reach, intensity, fidelity, and deviations are tracked by unit and evaluation wave."
+    },
+    {
+     "id": "B10",
+     "type": "scale",
+     "text": "The implementation has been sustained, reviewed, and improved using evidence and results."
+    },
+    {
+     "id": "B11",
+     "type": "text",
+     "text": "Planned implementation reach",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "B12",
+     "type": "text",
+     "text": "Actual implementation reach at this wave",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "B13",
+     "type": "text",
+     "text": "Cumulative implementation cost and staff time within the stated boundary",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "B14",
+     "type": "textarea",
+     "text": "Material adaptations, deviations, interruptions, or implementation failures",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "B15",
+     "type": "textarea",
+     "text": "Other innovation frameworks, restructures, digital programs, or co-interventions that could affect outcomes",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "B16",
+     "type": "textarea",
+     "text": "Rollout sequence and any unexposed, later-exposed, or comparison units",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "title": "GInI-Aligned Innovation Practice Maturity",
+   "items": [
+    {
+     "id": "C1",
+     "type": "scale",
+     "text": "A documented innovation strategy is aligned with organizational purpose and priorities."
+    },
+    {
+     "id": "C2",
+     "type": "scale",
+     "text": "Material sustainability priorities and relevant SDG targets inform innovation choices."
+    },
+    {
+     "id": "C3",
+     "type": "scale",
+     "text": "The innovation portfolio balances time horizons, risk, expected value, and strategic fit."
+    },
+    {
+     "id": "C4",
+     "type": "scale",
+     "text": "Senior leaders visibly sponsor innovation and resolve cross-functional barriers."
+    },
+    {
+     "id": "C5",
+     "type": "scale",
+     "text": "Roles, decision rights, and accountability for innovation are clear."
+    },
+    {
+     "id": "C6",
+     "type": "scale",
+     "text": "The culture supports experimentation, challenge, inclusion, and psychologically safe learning."
+    },
+    {
+     "id": "C7",
+     "type": "scale",
+     "text": "Governance criteria guide opportunity selection, continuation, scaling, pivoting, and stopping."
+    },
+    {
+     "id": "C8",
+     "type": "scale",
+     "text": "A documented process connects opportunity discovery through implementation and benefit realization."
+    },
+    {
+     "id": "C9",
+     "type": "scale",
+     "text": "Portfolio decisions use comparable evidence on value, risk, feasibility, and sustainability impacts."
+    },
+    {
+     "id": "C10",
+     "type": "scale",
+     "text": "Knowledge, assumptions, decisions, and lessons are recorded and reused."
+    },
+    {
+     "id": "C11",
+     "type": "scale",
+     "text": "Innovation has protected resources proportionate to the strategy and portfolio."
+    },
+    {
+     "id": "C12",
+     "type": "scale",
+     "text": "Funding is staged and adjusted as evidence, uncertainty, and risk change."
+    },
+    {
+     "id": "C13",
+     "type": "scale",
+     "text": "Actual spending and resource use are tracked against intended benefits and impacts."
+    },
+    {
+     "id": "C14",
+     "type": "scale",
+     "text": "Customer, citizen, employee, and ecosystem insights are gathered systematically."
+    },
+    {
+     "id": "C15",
+     "type": "scale",
+     "text": "People have the competence, tools, and time required to perform innovation work."
+    },
+    {
+     "id": "C16",
+     "type": "scale",
+     "text": "Data, digital systems, facilities, and intellectual-property practices enable experimentation and scale."
+    },
+    {
+     "id": "C17",
+     "type": "scale",
+     "text": "Partnerships and external networks extend knowledge, capability, and delivery reach."
+    },
+    {
+     "id": "C18",
+     "type": "scale",
+     "text": "Employees across levels and functions can contribute to innovation."
+    },
+    {
+     "id": "C19",
+     "type": "scale",
+     "text": "Affected stakeholders are involved early enough to shape problems, options, and safeguards."
+    },
+    {
+     "id": "C20",
+     "type": "scale",
+     "text": "Recognition, incentives, and performance expectations support responsible innovation behavior."
+    },
+    {
+     "id": "C21",
+     "type": "scale",
+     "text": "Communication makes innovation priorities, decisions, progress, and lessons visible."
+    },
+    {
+     "id": "C22",
+     "type": "scale",
+     "text": "Innovation inputs, activities, outputs, adoption, outcomes, and unintended effects are distinguished and tracked."
+    },
+    {
+     "id": "C23",
+     "type": "scale",
+     "text": "Benefits and sustainability outcomes are followed after launch, not only at project completion."
+    },
+    {
+     "id": "C24",
+     "type": "scale",
+     "text": "Portfolio evidence is used to improve the system and rebalance investment."
+    },
+    {
+     "id": "C25",
+     "type": "scale",
+     "text": "The organization has proportionate capability to define outcomes, collect evidence, evaluate innovation results, and use findings in subsequent decisions."
+    },
+    {
+     "id": "C26",
+     "type": "scale",
+     "text": "Innovation priorities are reviewed against changing external needs, stakeholder expectations, market/ public-service conditions, and societal challenges."
+    },
+    {
+     "id": "C27",
+     "type": "scale",
+     "text": "Program and portfolio reviews explicitly consider whether innovation is creating relevant value beyond the organization, not only internal efficiency or capability gains."
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "title": "Innovation Execution Quality",
+   "items": [
+    {
+     "id": "D1",
+     "type": "scale",
+     "text": "Opportunities and problems are framed using evidence rather than assumed solutions."
+    },
+    {
+     "id": "D2",
+     "type": "scale",
+     "text": "Affected people and delivery partners participate in research and co-design."
+    },
+    {
+     "id": "D3",
+     "type": "scale",
+     "text": "Needs, assumptions, constraints, and system relationships are made explicit."
+    },
+    {
+     "id": "D4",
+     "type": "scale",
+     "text": "Multiple options – including non-technical and no-action options – are considered."
+    },
+    {
+     "id": "D5",
+     "type": "scale",
+     "text": "Prototypes or pilots test desirability, feasibility, viability, and sustainability effects."
+    },
+    {
+     "id": "D6",
+     "type": "scale",
+     "text": "Ethical, human-rights, inclusion, and environmental implications are reviewed before approval."
+    },
+    {
+     "id": "D7",
+     "type": "scale",
+     "text": "Expected positive and adverse impacts, trade-offs, and distributional effects are assessed."
+    },
+    {
+     "id": "D8",
+     "type": "scale",
+     "text": "Stage decisions and the evidence supporting them are documented."
+    },
+    {
+     "id": "D9",
+     "type": "scale",
+     "text": "Implementation and user adoption are monitored, including barriers and workarounds."
+    },
+    {
+     "id": "D10",
+     "type": "scale",
+     "text": "Outcome measures and data collection are defined before or at launch."
+    },
+    {
+     "id": "D11",
+     "type": "scale",
+     "text": "Explicit criteria govern scale, transfer, pivot, or termination."
+    },
+    {
+     "id": "D12",
+     "type": "scale",
+     "text": "Lessons and post-implementation evidence change subsequent decisions."
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "title": "Sustainability Integration and PAS 53002 Alignment",
+   "items": [
+    {
+     "id": "E1",
+     "type": "scale",
+     "text": "The organizational and value-chain boundaries for sustainability impact management are documented."
+    },
+    {
+     "id": "E2",
+     "type": "scale",
+     "text": "Relevant internal and external issues – including dependencies and risks – are periodically reviewed."
+    },
+    {
+     "id": "E3",
+     "type": "scale",
+     "text": "Interested and affected parties are identified, including vulnerable or under-represented groups."
+    },
+    {
+     "id": "E4",
+     "type": "scale",
+     "text": "Material sustainability issues and relevant SDG targets are selected through a documented process."
+    },
+    {
+     "id": "E5",
+     "type": "scale",
+     "text": "Leaders are accountable for integrating sustainable-development impacts into decisions."
+    },
+    {
+     "id": "E6",
+     "type": "scale",
+     "text": "A documented policy or commitment links organizational purpose, sustainability priorities, and the SDGs."
+    },
+    {
+     "id": "E7",
+     "type": "scale",
+     "text": "Roles, authority, and escalation routes are defined across functions and governance bodies."
+    },
+    {
+     "id": "E8",
+     "type": "scale",
+     "text": "The organization commits to human rights, equity, justice, and meaningful participation."
+    },
+    {
+     "id": "E9",
+     "type": "scale",
+     "text": "Objectives use baselines, indicators, timeframes, responsibilities, and intended beneficiaries."
+    },
+    {
+     "id": "E10",
+     "type": "scale",
+     "text": "Thresholds, limits, or minimum acceptable performance are defined where material."
+    },
+    {
+     "id": "E11",
+     "type": "scale",
+     "text": "Positive, adverse, direct, indirect, cumulative, and unintended impacts are considered."
+    },
+    {
+     "id": "E12",
+     "type": "scale",
+     "text": "Trade-offs and the distribution of benefits and burdens are explicitly assessed."
+    },
+    {
+     "id": "E13",
+     "type": "scale",
+     "text": "Legal, policy, contractual, and voluntary commitments are maintained and reflected in plans."
+    },
+    {
+     "id": "E14",
+     "type": "scale",
+     "text": "Resources are assigned to sustainability objectives and impact management."
+    },
+    {
+     "id": "E15",
+     "type": "scale",
+     "text": "People performing relevant work have verified competence and role-specific learning."
+    },
+    {
+     "id": "E16",
+     "type": "scale",
+     "text": "Personnel understand the policy, their contribution, and the consequences of inadequate controls."
+    },
+    {
+     "id": "E17",
+     "type": "scale",
+     "text": "Internal and external communication identifies audience, content, timing, channel, and accountability."
+    },
+    {
+     "id": "E18",
+     "type": "scale",
+     "text": "Data definitions, sources, ownership, quality checks, limitations, and retention are controlled."
+    },
+    {
+     "id": "E19",
+     "type": "scale",
+     "text": "Sustainability criteria are integrated into innovation, investment, procurement, and operational decisions."
+    },
+    {
+     "id": "E20",
+     "type": "scale",
+     "text": "Options are compared for expected outcomes, adverse effects, uncertainty, and affected groups."
+    },
+    {
+     "id": "E21",
+     "type": "scale",
+     "text": "Controls and responsibilities extend to material suppliers, partners, and other external providers."
+    },
+    {
+     "id": "E22",
+     "type": "scale",
+     "text": "Grievance, complaint, remedy, and conflict-resolution routes are accessible and monitored."
+    },
+    {
+     "id": "E23",
+     "type": "scale",
+     "text": "Material changes or deviations trigger reassessment of impacts and controls."
+    },
+    {
+     "id": "E24",
+     "type": "scale",
+     "text": "Indicators monitor outputs, outcomes, adverse effects, equity, and progress toward targets."
+    },
+    {
+     "id": "E25",
+     "type": "scale",
+     "text": "Internal review or audit tests both implementation and the reliability of evidence."
+    },
+    {
+     "id": "E26",
+     "type": "scale",
+     "text": "Management review considers progress, risks, stakeholder input, uncertainty, resources, and decisions needed."
+    },
+    {
+     "id": "E27",
+     "type": "scale",
+     "text": "Nonconformities, gaps, and underperformance lead to documented corrective action and follow-up."
+    },
+    {
+     "id": "E28",
+     "type": "scale",
+     "text": "Lessons, complaints, evaluation, and emerging conditions drive continual improvement."
+    }
+   ]
+  },
+  {
+   "id": "F",
+   "title": "Linked Initiative Contribution Record",
+   "repeatable": "initiative",
+   "intro": "Evidence instruction: Complete this record using the strongest evidence reasonably available. Formal evaluation or quantitative impact analysis is not required unless it exists. Where evidence is unavailable, record this explicitly rather than estimating or reconstructing unsupported values. Add one record per selected initiative; include successful, mixed, and stopped initiatives.",
+   "items": [
+    {
+     "id": "F1",
+     "type": "text",
+     "text": "Initiative code, title, owner, and status",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F2",
+     "type": "text",
+     "text": "Start date, implementation date, and assessment date",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F3",
+     "type": "textarea",
+     "text": "Problem or opportunity addressed and affected population",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F4",
+     "type": "textarea",
+     "text": "Relevant sustainability issue, SDG goal/ target, and reason for materiality",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F5",
+     "type": "textarea",
+     "text": "GInI implementation and innovation practices that materially enabled the initiative (cite B/ C/D/ K/E IDs)",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F6",
+     "type": "textarea",
+     "text": "Mechanism: explain how those practices were expected to change decisions, behavior, or delivery",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F7",
+     "type": "textarea",
+     "text": "Innovation output delivered",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F8",
+     "type": "textarea",
+     "text": "Observed outcome(s), distinguishing internal organizational outcomes from external stakeholder or societal outcomes",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F9",
+     "type": "textarea",
+     "text": "Who experienced the outcome? Identify employees/ internal units and/ or external customers, citizens, beneficiaries, communities, partners, ecosystem actors, the environment, or society",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F10",
+     "type": "textarea",
+     "text": "Observed or plausible adverse/ unintended impacts and mitigation",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F11",
+     "type": "textarea",
+     "text": "Important external influences or alternative explanations",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F12",
+     "type": "textarea",
+     "text": "Where reasonably assessable, what is the best available indication of what might have happened without the initiative?",
+     "missing": [
+      [
+       "NAS",
+       "Not assessable"
+      ],
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "hint": "Not assessable is valid."
+    },
+    {
+     "id": "F13",
+     "type": "group",
+     "text": "Strength of evidence that the initiative contributed to observed change",
+     "fields": [
+      {
+       "key": "strength",
+       "label": "Strength",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "None"
+        ],
+        [
+         2,
+         "Weak"
+        ],
+        [
+         3,
+         "Moderate"
+        ],
+        [
+         4,
+         "Strong"
+        ],
+        [
+         5,
+         "Very Strong"
+        ],
+        [
+         6,
+         "Cannot assess"
+        ]
+       ]
+      },
+      {
+       "key": "estimate",
+       "label": "Optional quantitative estimate",
+       "type": "text"
+      },
+      {
+       "key": "method",
+       "label": "Method/ source",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "F14",
+     "type": "single",
+     "text": "Evidence design",
+     "options": [
+      [
+       1,
+       "Informed observation"
+      ],
+      [
+       2,
+       "Documented qualitative"
+      ],
+      [
+       3,
+       "Before-after"
+      ],
+      [
+       4,
+       "Trend"
+      ],
+      [
+       5,
+       "Comparator"
+      ],
+      [
+       6,
+       "Experimental-quasi-experimental"
+      ],
+      [
+       7,
+       "Mixed methods"
+      ],
+      [
+       8,
+       "Other"
+      ],
+      [
+       9,
+       "No formal evaluation"
+      ]
+     ]
+    },
+    {
+     "id": "F15",
+     "type": "text",
+     "text": "Evidence sources and identifiers",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F16",
+     "type": "single",
+     "text": "Independent review or validation",
+     "options": [
+      [
+       1,
+       "None"
+      ],
+      [
+       2,
+       "Internal"
+      ],
+      [
+       3,
+       "External"
+      ]
+     ]
+    },
+    {
+     "id": "F17",
+     "type": "single",
+     "text": "Decision resulting from evidence",
+     "options": [
+      [
+       1,
+       "Scale"
+      ],
+      [
+       2,
+       "Continue"
+      ],
+      [
+       3,
+       "Modify"
+      ],
+      [
+       4,
+       "Pause"
+      ],
+      [
+       5,
+       "Stop"
+      ],
+      [
+       6,
+       "Transfer"
+      ],
+      [
+       7,
+       "Pending"
+      ]
+     ]
+    },
+    {
+     "id": "F18",
+     "type": "textarea",
+     "text": "Key lesson and transferability conditions",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F19",
+     "type": "textarea",
+     "text": "Future horizon, weak signal, scenario, or preferred future that informed the initiative",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F20",
+     "type": "textarea",
+     "text": "How the initiative was tested against more than one plausible future",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F21",
+     "type": "textarea",
+     "text": "Backcast milestones, signposts, and decision triggers",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F22",
+     "type": "textarea",
+     "text": "Intended system-shaping influence and risks of lock-in or reduced future options",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F23",
+     "type": "textarea",
+     "text": "GInI implementation exposure during the initiative",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F24",
+     "type": "textarea",
+     "text": "Other frameworks, investments, or organizational changes that could have contributed",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "F25",
+     "type": "text",
+     "text": "Implementation and initiative costs used in economic analysis",
+     "missing": [
+      [
+       "NAV",
+       "Not Available"
+      ],
+      [
+       "NUT",
+       "Not Undertaken"
+      ],
+      [
+       "DK",
+       "Don't Know"
+      ]
+     ],
+     "hint": "If available; otherwise Not Available / Not Undertaken."
+    },
+    {
+     "id": "F26",
+     "type": "text",
+     "text": "Monetized benefit, cost avoidance, or public value estimate",
+     "missing": [
+      [
+       "NAV",
+       "Not Available"
+      ],
+      [
+       "NUT",
+       "Not Undertaken"
+      ],
+      [
+       "DK",
+       "Don't Know"
+      ]
+     ],
+     "hint": "If available; otherwise Not Available / Not Undertaken."
+    },
+    {
+     "id": "F27",
+     "type": "single",
+     "text": "Outcome orientation",
+     "options": [
+      [
+       1,
+       "Internal only"
+      ],
+      [
+       2,
+       "Primarily internal"
+      ],
+      [
+       3,
+       "Mixed internal and external"
+      ],
+      [
+       4,
+       "Primarily external"
+      ],
+      [
+       5,
+       "External only"
+      ]
+     ]
+    },
+    {
+     "id": "F28",
+     "type": "multi",
+     "text": "External outcome or impact category",
+     "options": [
+      [
+       1,
+       "Customer/ user"
+      ],
+      [
+       2,
+       "Citizen/ public value"
+      ],
+      [
+       3,
+       "Beneficiary/ community"
+      ],
+      [
+       4,
+       "Partner/ ecosystem"
+      ],
+      [
+       5,
+       "Market/ economic"
+      ],
+      [
+       6,
+       "Environmental"
+      ],
+      [
+       7,
+       "Policy/ institutional"
+      ],
+      [
+       8,
+       "Wider societal"
+      ],
+      [
+       9,
+       "Other"
+      ],
+      [
+       10,
+       "Not applicable"
+      ]
+     ]
+    },
+    {
+     "id": "F29",
+     "type": "textarea",
+     "text": "External outcome or impact statement",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ]
+     ],
+     "hint": "Describe the change experienced outside the organization, by whom, and why it matters to the organization’s continuing relevance and purpose. If not applicable, explain why."
+    },
+    {
+     "id": "F30",
+     "type": "group",
+     "text": "Evidence of external outcome or impact",
+     "hint": "Evidence ID/ source and E0–E5 evidence level. Where no external evidence is available, record E0 rather than inferring impact.",
+     "fields": [
+      {
+       "key": "source",
+       "label": "Evidence ID/ source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "F31",
+     "type": "group",
+     "text": "External relevance test",
+     "hint": "Does the initiative remain relevant to current or emerging external needs? Explain using stakeholder, market, societal, policy, environmental, or ecosystem evidence.",
+     "fields": [
+      {
+       "key": "answer",
+       "label": "Answer",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Yes"
+        ],
+        [
+         2,
+         "Partially"
+        ],
+        [
+         3,
+         "No"
+        ],
+        [
+         4,
+         "Cannot assess"
+        ]
+       ]
+      },
+      {
+       "key": "explain",
+       "label": "Explanation",
+       "type": "textarea"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "G",
+   "title": "GInI-Aligned Outcomes and Evidence Register",
+   "intro": "Measurement rule. Use the strongest available organizational evidence. Quantitative records are preferred where they exist, but their absence does not prevent completion. Do not estimate or reconstruct unavailable data solely for this survey. Where quantitative measurement is unavailable, identify the best available qualitative or documentary evidence and classify its evidence level. Missing baseline, follow-up, comparison, or verification data must be recorded as “Not Available”. A change is not automatically caused by GInI implementation. External-impact rule: at organization/ program level, record at least one material external outcome where the assessed innovation program is intended to create external value; otherwise document why external impact is not applicable to the assessed scope.",
+   "items": [
+    {
+     "id": "G1a",
+     "type": "group",
+     "text": "Leadership",
+     "hint": "Prompt: Sponsor time, decision participation, documented barrier resolution",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1b",
+     "type": "group",
+     "text": "Environment",
+     "hint": "Prompt: Participation, psychological safety, engagement, program satisfaction",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1c",
+     "type": "group",
+     "text": "Competence",
+     "hint": "Prompt: Training completion, assessed competence, certification coverage",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1d",
+     "type": "group",
+     "text": "Inputs",
+     "hint": "Prompt: Quantity, quality, strategic value, and diversity of opportunities, plus participant time",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1e",
+     "type": "group",
+     "text": "Conversions",
+     "hint": "Prompt: Quantity, quality, and value advancing through the pipeline, plus decision/ development time",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1f",
+     "type": "group",
+     "text": "Outputs",
+     "hint": "Prompt: Implemented/ commercialized innovations, patents, services, or policies, plus adoption",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1g",
+     "type": "group",
+     "text": "Efficiency",
+     "hint": "Prompt: Outputs relative to inputs, time, and cost, plus stop/ pivot rate",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1h",
+     "type": "group",
+     "text": "Balance",
+     "hint": "Prompt: Portfolio mix by unit, type, risk, and time horizon",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1i",
+     "type": "group",
+     "text": "Financial/ economic return",
+     "hint": "Prompt: Revenue, profit, savings, cost avoidance, or defensible public value",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1j",
+     "type": "group",
+     "text": "Overall success",
+     "hint": "Prompt: Benefits realized versus target and declared program objectives",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1k",
+     "type": "group",
+     "text": "Digital service transformation",
+     "hint": "Prompt: Public-sector digital access, completion, quality, cost, and user outcome change where material",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1l",
+     "type": "group",
+     "text": "External stakeholder value",
+     "hint": "Prompt: Customer, citizen, beneficiary, community, partner, or ecosystem outcomes attributable or plausibly linked to innovation",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1m",
+     "type": "group",
+     "text": "External relevance and durability",
+     "hint": "Prompt: Evidence that innovations remain relevant to changing external needs, conditions, expectations, and future challenges",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1n",
+     "type": "group",
+     "text": "Societal and sustainability impact",
+     "hint": "Prompt: Public value, inclusion, environmental, policy, market-shaping, or wider societal outcomes beyond the organization",
+     "fields": [
+      {
+       "key": "measure",
+       "label": "Measure/ evidence available (definition, unit)",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G1X",
+     "type": "repeat",
+     "text": "Additional Indicator Register — G.1 continuation (one row per indicator)",
+     "min_rows": 0,
+     "fields": [
+      {
+       "key": "family",
+       "label": "Family ID",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "G1a Leadership"
+        ],
+        [
+         2,
+         "G1b Environment"
+        ],
+        [
+         3,
+         "G1c Competence"
+        ],
+        [
+         4,
+         "G1d Inputs"
+        ],
+        [
+         5,
+         "G1e Conversions"
+        ],
+        [
+         6,
+         "G1f Outputs"
+        ],
+        [
+         7,
+         "G1g Efficiency"
+        ],
+        [
+         8,
+         "G1h Balance"
+        ],
+        [
+         9,
+         "G1i Financial/ economic return"
+        ],
+        [
+         10,
+         "G1j Overall success"
+        ],
+        [
+         11,
+         "G1k Digital service transformation"
+        ],
+        [
+         12,
+         "G1l External stakeholder value"
+        ],
+        [
+         13,
+         "G1m External relevance and durability"
+        ],
+        [
+         14,
+         "G1n Societal and sustainability impact"
+        ]
+       ]
+      },
+      {
+       "key": "indicator",
+       "label": "Indicator name/ definition/ unit",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current evidence/ value",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source/ date",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      },
+      {
+       "key": "limits",
+       "label": "Limitations",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "G2",
+     "type": "repeat",
+     "text": "Outcome Evidence Register",
+     "min_rows": 6,
+     "fields": [
+      {
+       "key": "class",
+       "label": "Classification",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "INTERNAL"
+        ],
+        [
+         2,
+         "CUSTOMER/ USER"
+        ],
+        [
+         3,
+         "CITIZEN/ PUBLIC VALUE"
+        ],
+        [
+         4,
+         "BENEFICIARY/ COMMUNITY"
+        ],
+        [
+         5,
+         "PARTNER/ ECOSYSTEM"
+        ],
+        [
+         6,
+         "MARKET/ ECONOMIC"
+        ],
+        [
+         7,
+         "ENVIRONMENTAL"
+        ],
+        [
+         8,
+         "POLICY/ INSTITUTIONAL"
+        ],
+        [
+         9,
+         "WIDER SOCIETAL"
+        ],
+        [
+         10,
+         "OTHER"
+        ]
+       ]
+      },
+      {
+       "key": "metric",
+       "label": "Outcome/ metric",
+       "type": "text"
+      },
+      {
+       "key": "population",
+       "label": "Population/ stakeholder",
+       "type": "text"
+      },
+      {
+       "key": "evtype",
+       "label": "Evidence type",
+       "type": "text"
+      },
+      {
+       "key": "baseline",
+       "label": "Baseline, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "current",
+       "label": "Current/ follow-up",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "comparison",
+       "label": "Comparison, if available",
+       "type": "text",
+       "missing": [
+        [
+         "NAV",
+         "Not Available"
+        ]
+       ]
+      },
+      {
+       "key": "source",
+       "label": "Source & limits",
+       "type": "textarea"
+      },
+      {
+       "key": "verification",
+       "label": "Verification",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "None"
+        ],
+        [
+         2,
+         "Internal"
+        ],
+        [
+         3,
+         "External"
+        ]
+       ]
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G3a",
+     "type": "group",
+     "text": "Economic value and financial or operational resilience",
+     "fields": [
+      {
+       "key": "change",
+       "label": "Change",
+       "type": "change"
+      },
+      {
+       "key": "evidence",
+       "label": "Evidence ID",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G3b",
+     "type": "group",
+     "text": "People, wellbeing, inclusion, skills, and decent work",
+     "fields": [
+      {
+       "key": "change",
+       "label": "Change",
+       "type": "change"
+      },
+      {
+       "key": "evidence",
+       "label": "Evidence ID",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G3c",
+     "type": "group",
+     "text": "Environmental pressures and regenerative outcomes",
+     "fields": [
+      {
+       "key": "change",
+       "label": "Change",
+       "type": "change"
+      },
+      {
+       "key": "evidence",
+       "label": "Evidence ID",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G3d",
+     "type": "group",
+     "text": "Governance, ethics, trust, rights, and accountability",
+     "fields": [
+      {
+       "key": "change",
+       "label": "Change",
+       "type": "change"
+      },
+      {
+       "key": "evidence",
+       "label": "Evidence ID",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G3e",
+     "type": "group",
+     "text": "Customer or citizen service, access, and public value",
+     "fields": [
+      {
+       "key": "change",
+       "label": "Change",
+       "type": "change"
+      },
+      {
+       "key": "evidence",
+       "label": "Evidence ID",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G3f",
+     "type": "group",
+     "text": "Organizational and system resilience or adaptive capacity",
+     "fields": [
+      {
+       "key": "change",
+       "label": "Change",
+       "type": "change"
+      },
+      {
+       "key": "evidence",
+       "label": "Evidence ID",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G3g",
+     "type": "group",
+     "text": "Overall adverse or unintended effects",
+     "fields": [
+      {
+       "key": "change",
+       "label": "Change",
+       "type": "change"
+      },
+      {
+       "key": "evidence",
+       "label": "Evidence ID",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G3h",
+     "type": "group",
+     "text": "External customer, citizen, beneficiary, or community outcomes",
+     "fields": [
+      {
+       "key": "change",
+       "label": "Change",
+       "type": "change"
+      },
+      {
+       "key": "evidence",
+       "label": "Evidence ID",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G3i",
+     "type": "group",
+     "text": "Partner, ecosystem, market, or institutional outcomes",
+     "fields": [
+      {
+       "key": "change",
+       "label": "Change",
+       "type": "change"
+      },
+      {
+       "key": "evidence",
+       "label": "Evidence ID",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "G3j",
+     "type": "group",
+     "text": "Wider societal relevance and sustainable-development impact",
+     "fields": [
+      {
+       "key": "change",
+       "label": "Change",
+       "type": "change"
+      },
+      {
+       "key": "evidence",
+       "label": "Evidence ID",
+       "type": "text"
+      },
+      {
+       "key": "level",
+       "label": "Evidence level",
+       "type": "level"
+      }
+     ]
+    },
+    {
+     "id": "GX",
+     "type": "textarea",
+     "text": "If no external outcome is applicable to the assessed scope, state why",
+     "missing": [],
+     "hint": "Required only when no externally classified outcome is recorded in G.2 and the program is not intended to create external value."
+    }
+   ],
+   "groups": [
+    {
+     "title": "G.1 Innovation Program Outcome Families",
+     "note": "No automatic weighting or aggregation applies to indicators within an Outcome Family. Report each material indicator separately, with its own definition/ unit, baseline (if available), current value or qualitative evidence, source, and E0–E5 evidence level. Do not average indicators with different units. If only qualitative evidence exists, record it without inventing numbers. Evidence levels describe the support for a claim, not the magnitude of performance.",
+     "items": [
+      "G1a",
+      "G1b",
+      "G1c",
+      "G1d",
+      "G1e",
+      "G1f",
+      "G1g",
+      "G1h",
+      "G1i",
+      "G1j",
+      "G1k",
+      "G1l",
+      "G1m",
+      "G1n",
+      "G1X"
+     ]
+    },
+    {
+     "title": "G.2 Outcome Evidence Register",
+     "note": "Record the strongest available evidence for each material outcome. Quantitative evidence is not mandatory where it does not exist. Classify every outcome. At least one external classification is required at organization/ program level where external value is within scope.",
+     "items": [
+      "G2",
+      "GX"
+     ]
+    },
+    {
+     "title": "G.3 Outcome Domain Change",
+     "items": [
+      "G3a",
+      "G3b",
+      "G3c",
+      "G3d",
+      "G3e",
+      "G3f",
+      "G3g",
+      "G3h",
+      "G3i",
+      "G3j"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "H",
+   "title": "Context and Alternative Explanations",
+   "items": [
+    {
+     "id": "H1",
+     "type": "group",
+     "text": "Macroeconomic or market conditions",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "H2",
+     "type": "group",
+     "text": "Regulatory, policy, or political changes",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "H3",
+     "type": "group",
+     "text": "Leadership, restructuring, merger, or workforce change",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "H4",
+     "type": "group",
+     "text": "Budget growth, reduction, or funding restrictions",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "H5",
+     "type": "group",
+     "text": "Technology availability or major digital investment outside the innovation program",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "H6",
+     "type": "group",
+     "text": "Supplier, partner, or ecosystem performance",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "H7",
+     "type": "group",
+     "text": "Crisis, disaster, conflict, public-health, or climate event",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "H8",
+     "type": "group",
+     "text": "Changes in measurement, reporting boundaries, or data systems",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "H9",
+     "type": "group",
+     "text": "Other major program or operational improvement",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "H10",
+     "type": "group",
+     "text": "Other material influence",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "H11",
+     "type": "group",
+     "text": "Future assumptions or scenario conditions developed differently from expectations",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "H12",
+     "type": "group",
+     "text": "Other innovation frameworks, transformation programs, or implementation support introduced during the evaluation period",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    },
+    {
+     "id": "H13",
+     "type": "group",
+     "text": "Material change in external stakeholder needs, market/ public-service conditions, societal expectations, or ecosystem dynamics",
+     "fields": [
+      {
+       "key": "influence",
+       "label": "Influence −2 to +2",
+       "type": "context"
+      },
+      {
+       "key": "explain",
+       "label": "Evidence/ explanation",
+       "type": "textarea"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "I",
+   "title": "Barriers and Improvement Priorities",
+   "items": [
+    {
+     "id": "I1",
+     "type": "group",
+     "text": "Governance or leadership",
+     "fields": [
+      {
+       "key": "severity",
+       "label": "Severity 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "control",
+       "label": "Controllability 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "top3",
+       "label": "Top 3",
+       "type": "check"
+      }
+     ]
+    },
+    {
+     "id": "I2",
+     "type": "group",
+     "text": "Strategy or priorities",
+     "fields": [
+      {
+       "key": "severity",
+       "label": "Severity 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "control",
+       "label": "Controllability 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "top3",
+       "label": "Top 3",
+       "type": "check"
+      }
+     ]
+    },
+    {
+     "id": "I3",
+     "type": "group",
+     "text": "Funding, time, or people",
+     "fields": [
+      {
+       "key": "severity",
+       "label": "Severity 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "control",
+       "label": "Controllability 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "top3",
+       "label": "Top 3",
+       "type": "check"
+      }
+     ]
+    },
+    {
+     "id": "I4",
+     "type": "group",
+     "text": "Skills, tools, or infrastructure",
+     "fields": [
+      {
+       "key": "severity",
+       "label": "Severity 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "control",
+       "label": "Controllability 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "top3",
+       "label": "Top 3",
+       "type": "check"
+      }
+     ]
+    },
+    {
+     "id": "I5",
+     "type": "group",
+     "text": "Culture, incentives, or psychological safety",
+     "fields": [
+      {
+       "key": "severity",
+       "label": "Severity 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "control",
+       "label": "Controllability 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "top3",
+       "label": "Top 3",
+       "type": "check"
+      }
+     ]
+    },
+    {
+     "id": "I6",
+     "type": "group",
+     "text": "Data quality, measurement, or evidence",
+     "fields": [
+      {
+       "key": "severity",
+       "label": "Severity 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "control",
+       "label": "Controllability 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "top3",
+       "label": "Top 3",
+       "type": "check"
+      }
+     ]
+    },
+    {
+     "id": "I7",
+     "type": "group",
+     "text": "Stakeholder participation, equity, or trust",
+     "fields": [
+      {
+       "key": "severity",
+       "label": "Severity 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "control",
+       "label": "Controllability 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "top3",
+       "label": "Top 3",
+       "type": "check"
+      }
+     ]
+    },
+    {
+     "id": "I8",
+     "type": "group",
+     "text": "Supplier, partner, regulatory, or ecosystem conditions",
+     "fields": [
+      {
+       "key": "severity",
+       "label": "Severity 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "control",
+       "label": "Controllability 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "top3",
+       "label": "Top 3",
+       "type": "check"
+      }
+     ]
+    },
+    {
+     "id": "I9",
+     "type": "group",
+     "text": "Short-term incentives or weak foresight and future-shaping capability",
+     "fields": [
+      {
+       "key": "severity",
+       "label": "Severity 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "control",
+       "label": "Controllability 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "top3",
+       "label": "Top 3",
+       "type": "check"
+      }
+     ]
+    },
+    {
+     "id": "I10",
+     "type": "group",
+     "text": "Other",
+     "fields": [
+      {
+       "key": "severity",
+       "label": "Severity 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "control",
+       "label": "Controllability 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "top3",
+       "label": "Top 3",
+       "type": "check"
+      }
+     ]
+    },
+    {
+     "id": "I11",
+     "type": "group",
+     "text": "Weak external relevance, stakeholder insight, or connection to changing societal/ market/ public-service needs",
+     "fields": [
+      {
+       "key": "severity",
+       "label": "Severity 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "control",
+       "label": "Controllability 0–4",
+       "type": "rating04"
+      },
+      {
+       "key": "top3",
+       "label": "Top 3",
+       "type": "check"
+      }
+     ]
+    },
+    {
+     "id": "I12",
+     "type": "textarea",
+     "text": "Most important action in next 90 days",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "I13",
+     "type": "textarea",
+     "text": "Owner, resources, completion evidence",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    }
+   ],
+   "intro": "Rate each potential barrier for severity and controllability (0–4) and mark at most three as Top 3."
+  },
+  {
+   "id": "J",
+   "title": "Evidence Availability and Evaluation Readiness",
+   "intro": "Evidence gaps recorded in this section are findings, not survey-completion failures. Respondents should not create retrospective evidence solely to satisfy these items. J13–J15 represent progressively advanced evaluation capability and are not expected to be available in every participating organization.",
+   "items": [
+    {
+     "id": "J1",
+     "type": "group",
+     "text": "Innovation strategy and governance records",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J2",
+     "type": "group",
+     "text": "Sustainability/ SDG policy, materiality process, and objectives",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J3",
+     "type": "group",
+     "text": "Portfolio register, stage decisions, and benefit-realization records",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J4",
+     "type": "group",
+     "text": "Budgets, resource records, and training/ competence evidence",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J5",
+     "type": "group",
+     "text": "Stakeholder research, participation, and grievance records",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J6",
+     "type": "group",
+     "text": "Impact/ risk assessments, option comparisons, and mitigation actions",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J7",
+     "type": "group",
+     "text": "Indicator definitions, raw/ aggregated data, and quality checks",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J8",
+     "type": "group",
+     "text": "Internal audit, independent evaluation, or external assurance",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J9",
+     "type": "group",
+     "text": "Management review and corrective-action records",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J10",
+     "type": "group",
+     "text": "Evidence of adverse outcomes, stopped projects, and lessons – not only successes",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J11",
+     "type": "group",
+     "text": "Trend, weak-signal, STEEPL/ PESTEL, scenario, and uncertainty records",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J12",
+     "type": "group",
+     "text": "Preferred-future, backcasting, strategy stress-test, signpost, and ecosystem-influence records",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J13",
+     "type": "group",
+     "text": "Dated GInI implementation reach, intensity, fidelity, adaptation, and cost records by unit",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J14",
+     "type": "group",
+     "text": "Pre-implementation baselines, repeated follow-ups, comparison data, and documented co-interventions",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J15",
+     "type": "group",
+     "text": "Analysis protocol, code, effect estimates, uncertainty intervals, and sensitivity analyses",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J16",
+     "type": "group",
+     "text": "External stakeholder outcome evidence: customer/ citizen/ beneficiary/ community/ partner feedback, adoption, service, market, policy, ecosystem, environmental, or public-value records",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "id": "J17",
+     "type": "group",
+     "text": "Evidence that external needs, expectations, or conditions are monitored and used to test continuing relevance of the innovation program",
+     "fields": [
+      {
+       "key": "avail",
+       "label": "Availability",
+       "type": "single",
+       "options": [
+        [
+         1,
+         "Available"
+        ],
+        [
+         2,
+         "Partial"
+        ],
+        [
+         "NAV",
+         "Not Available"
+        ],
+        [
+         "NA",
+         "Not Applicable"
+        ],
+        [
+         "DK",
+         "Don't Know"
+        ]
+       ]
+      },
+      {
+       "key": "ident",
+       "label": "Identifier/ owner",
+       "type": "text"
+      }
+     ]
+    }
+   ],
+   "groups": [
+    {
+     "title": "J.1 Core Evidence Availability (J1–J12)",
+     "items": [
+      "J1",
+      "J2",
+      "J3",
+      "J4",
+      "J5",
+      "J6",
+      "J7",
+      "J8",
+      "J9",
+      "J10",
+      "J11",
+      "J12"
+     ]
+    },
+    {
+     "title": "J.2 Advanced and External Evidence Availability (J13–J17)",
+     "items": [
+      "J13",
+      "J14",
+      "J15",
+      "J16",
+      "J17"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "K",
+   "title": "Future Shaping Capability",
+   "items": [
+    {
+     "id": "K1",
+     "type": "scale",
+     "text": "The organization routinely scans societal, technological, economic, environmental, political, and legal change relevant to its purpose."
+    },
+    {
+     "id": "K2",
+     "type": "scale",
+     "text": "Weak signals and emerging needs are sought through diverse internal, external, and affected-stakeholder sources."
+    },
+    {
+     "id": "K3",
+     "type": "scale",
+     "text": "Future questions use explicit time horizons and document evidence, assumptions, uncertainty, and contrary signals."
+    },
+    {
+     "id": "K4",
+     "type": "scale",
+     "text": "Several plausible future scenarios are developed rather than relying on one forecast or a simple extension of the present."
+    },
+    {
+     "id": "K5",
+     "type": "scale",
+     "text": "Preferred future states are defined with sustainability, future generations, rights, equity, and long-term value in view."
+    },
+    {
+     "id": "K6",
+     "type": "scale",
+     "text": "Affected stakeholders and relevant external experts help challenge scenarios, preferred futures, and their distributional effects."
+    },
+    {
+     "id": "K7",
+     "type": "scale",
+     "text": "Backcasting translates preferred futures into milestones, capabilities, assumptions, and near-term decisions."
+    },
+    {
+     "id": "K8",
+     "type": "scale",
+     "text": "Innovation and sustainability strategies are stress-tested across scenarios for robustness, adaptability, trade-offs, and failure modes."
+    },
+    {
+     "id": "K9",
+     "type": "scale",
+     "text": "The portfolio protects staged options across near-, medium-, and long-term horizons, including experiments for emerging opportunities."
+    },
+    {
+     "id": "K10",
+     "type": "scale",
+     "text": "The organization uses partnerships, procurement, standards, policy, or market mechanisms to influence system conditions consistent with the preferred future."
+    },
+    {
+     "id": "K11",
+     "type": "scale",
+     "text": "Signposts and trigger thresholds prompt timely decisions to scale, pivot, stop, or reallocate as conditions evolve."
+    },
+    {
+     "id": "K12",
+     "type": "scale",
+     "text": "Governance reviews intended and unintended system effects, lock-in risks, and whether actions preserve viable future options."
+    },
+    {
+     "id": "K13",
+     "type": "single",
+     "text": "Primary future horizon",
+     "options": [
+      [
+       1,
+       "<3"
+      ],
+      [
+       2,
+       "3–10"
+      ],
+      [
+       3,
+       "11–30"
+      ],
+      [
+       4,
+       ">30"
+      ],
+      [
+       5,
+       "Multiple"
+      ],
+      [
+       6,
+       "Not explicit"
+      ]
+     ]
+    },
+    {
+     "id": "K14",
+     "type": "multi",
+     "text": "Methods used",
+     "options": [
+      [
+       1,
+       "Trend Watching-Scouting"
+      ],
+      [
+       2,
+       "STEEPL-PESTEL"
+      ],
+      [
+       3,
+       "Trendcasting"
+      ],
+      [
+       4,
+       "Scenarios"
+      ],
+      [
+       5,
+       "Backcasting"
+      ],
+      [
+       6,
+       "Stress Testing"
+      ],
+      [
+       7,
+       "Other"
+      ]
+     ]
+    },
+    {
+     "id": "K15",
+     "type": "textarea",
+     "text": "Most recent material decision changed by future-shaping work",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    },
+    {
+     "id": "K16",
+     "type": "text",
+     "text": "Evidence identifiers for scans, scenarios, pathways, stress tests, signposts, or decision records",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ]
+    }
+   ],
+   "groups": [
+    {
+     "title": "K.1 Future-Shaping Capability Statements",
+     "items": [
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "K5",
+      "K6",
+      "K7",
+      "K8",
+      "K9",
+      "K10",
+      "K11",
+      "K12"
+     ]
+    },
+    {
+     "title": "K.2 Context and Evidence Questions",
+     "items": [
+      "K13",
+      "K14",
+      "K15",
+      "K16"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "title": "Advanced Impact Evaluation Design Record",
+   "conditional": true,
+   "intro": "CONDITIONAL MODULE — COMPLETE ONLY WHERE FORMAL IMPACT EVALUATION IS FEASIBLE AND APPROPRIATE. This section is not required for all participating organizations. Organizations without these capabilities remain eligible to complete the main survey, and their available evidence will be classified accordingly. Where Section L cannot be completed, this does not imply that innovation implementation or outcomes are absent; it limits the strength of causal inference.",
+   "items": [
+    {
+     "id": "L0a",
+     "type": "single",
+     "text": "Is sufficient evidence and analytical capability available to undertake a formal impact evaluation for this outcome?",
+     "options": [
+      [
+       1,
+       "Yes"
+      ],
+      [
+       2,
+       "Partially"
+      ],
+      [
+       3,
+       "No"
+      ],
+      [
+       4,
+       "Not appropriate"
+      ],
+      [
+       "DK",
+       "Don't Know"
+      ]
+     ]
+    },
+    {
+     "id": "L0b",
+     "type": "single",
+     "text": "Primary reason if Section L is not completed",
+     "options": [
+      [
+       1,
+       "No baseline"
+      ],
+      [
+       2,
+       "No follow-up"
+      ],
+      [
+       3,
+       "No credible comparison"
+      ],
+      [
+       4,
+       "Insufficient sample-data"
+      ],
+      [
+       5,
+       "Insufficient analytical expertise"
+      ],
+      [
+       6,
+       "Evaluation not commissioned"
+      ],
+      [
+       7,
+       "Not proportionate-appropriate"
+      ],
+      [
+       8,
+       "Other"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "not_in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L1",
+     "type": "textarea",
+     "text": "Primary estimand: outcome, population, GInI exposure, comparison, period, and effect scale",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L2",
+     "type": "textarea",
+     "text": "Evaluation design",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L3",
+     "type": "textarea",
+     "text": "Pre-implementation waves, baseline date, and planned follow-up dates",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L4",
+     "type": "textarea",
+     "text": "Exposed units and measured implementation start, reach, intensity, and fidelity by wave",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L5",
+     "type": "textarea",
+     "text": "Comparison units, exposure status, contamination, and reasons they are credible",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L6",
+     "type": "textarea",
+     "text": "Allocation, rollout, or selection mechanism and risk of selection bias",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L7",
+     "type": "textarea",
+     "text": "Pre-intervention trend, baseline balance, and measurement-equivalence evidence",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L8",
+     "type": "textarea",
+     "text": "Confounders and co-interventions, including how each will be measured or controlled",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L9",
+     "type": "textarea",
+     "text": "Sampling, statistical power, or precision target and minimum detectable effect",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L10",
+     "type": "textarea",
+     "text": "Missing data, attrition, nonresponse, and unit turnover rules",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L11",
+     "type": "textarea",
+     "text": "Predeclared analysis model, covariates, subgroup tests, and clustering level",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L12",
+     "type": "textarea",
+     "text": "Effect estimate with unit, standard error or confidence interval, and practical significance",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L13",
+     "type": "textarea",
+     "text": "Sensitivity, placebo, robustness, and adverse-distribution checks",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L14",
+     "type": "single",
+     "text": "Permitted claim level",
+     "options": [
+      [
+       1,
+       "Descriptive"
+      ],
+      [
+       2,
+       "Temporal association"
+      ],
+      [
+       3,
+       "Comparative"
+      ],
+      [
+       4,
+       "Contribution"
+      ],
+      [
+       5,
+       "Causal-supportive"
+      ],
+      [
+       6,
+       "Causal"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    },
+    {
+     "id": "L15",
+     "type": "text",
+     "text": "Protocol registration, dataset, code, version, and independent review identifiers",
+     "missing": [
+      [
+       "DK",
+       "Don't Know"
+      ],
+      [
+       "NA",
+       "Not Applicable"
+      ],
+      [
+       "NAV",
+       "Not Available"
+      ]
+     ],
+     "show_if": {
+      "item": "L0a",
+      "in": [
+       1,
+       2
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "declaration": [
+  {
+   "id": "DEC1",
+   "type": "check",
+   "required": true,
+   "text": "I answered from the perspective of the role selected in Question A2 and identified uncertainty rather than guessing.",
+   "label": "Confirmed"
+  },
+  {
+   "id": "DEC2",
+   "type": "single",
+   "text": "To the best of my knowledge, cited evidence exists and is within the stated reporting boundary.",
+   "options": [
+    [
+     1,
+     "Confirmed"
+    ],
+    [
+     2,
+     "Not able to confirm"
+    ]
+   ]
+  },
+  {
+   "id": "DEC3",
+   "type": "single",
+   "text": "I consent to being contacted for clarification through a separately stored contact list.",
+   "options": [
+    [
+     1,
+     "Yes"
+    ],
+    [
+     2,
+     "No"
+    ]
+   ]
+  },
+  {
+   "id": "DEC4",
+   "type": "date",
+   "text": "Completion date",
+   "auto": "today"
+  }
+ ],
+ "roles": {
+  "1": {
+   "name": "Executive Sponsor",
+   "modules": [
+    "A",
+    "B",
+    "H",
+    "I",
+    "K"
+   ]
+  },
+  "2": {
+   "name": "Innovation Lead or Portfolio Owner",
+   "modules": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "F",
+    "I",
+    "K"
+   ]
+  },
+  "3": {
+   "name": "Sustainability or Impact Lead",
+   "modules": [
+    "A",
+    "E",
+    "F",
+    "I",
+    "K"
+   ]
+  },
+  "4": {
+   "name": "Data, Assurance, or Performance Owner",
+   "modules": [
+    "A",
+    "G",
+    "H",
+    "J"
+   ]
+  },
+  "5": {
+   "name": "Independent Evaluator or Analytics Lead",
+   "modules": [
+    "A",
+    "G",
+    "H",
+    "J",
+    "L"
+   ]
+  },
+  "6": {
+   "name": "Strategy or Foresight Owner",
+   "modules": [
+    "A",
+    "K"
+   ]
+  },
+  "7": {
+   "name": "Affected Stakeholder or Delivery Partner",
+   "modules": [
+    "A",
+    "F",
+    "I",
+    "K"
+   ],
+   "only": {
+    "F": [
+     "F3",
+     "F4",
+     "F5",
+     "F6",
+     "F7",
+     "F8",
+     "F9",
+     "F10",
+     "F11",
+     "F12"
+    ],
+    "K": [
+     "K5",
+     "K6"
+    ]
+   },
+   "internal": false
+  },
+  "8": {
+   "name": "Other",
+   "modules": [
+    "A",
+    "I"
+   ]
+  }
+ },
+ "indices": {
+  "GIF": {
+   "name": "GInI Implementation Fidelity",
+   "domains": [
+    {
+     "name": "GIF",
+     "items": [
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10"
+     ]
+    }
+   ],
+   "min_items": 5,
+   "per_domain": 1
+  },
+  "IPM": {
+   "name": "Innovation Practice Maturity",
+   "min_pct": 0.7,
+   "per_domain": 2,
+   "item_report": [
+    "C25",
+    "C26",
+    "C27"
+   ],
+   "domains": [
+    {
+     "name": "Strategy",
+     "items": [
+      "C1",
+      "C2",
+      "C3"
+     ]
+    },
+    {
+     "name": "Foundation",
+     "items": [
+      "C4",
+      "C5",
+      "C6"
+     ]
+    },
+    {
+     "name": "Procedures",
+     "items": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+     ]
+    },
+    {
+     "name": "Financing",
+     "items": [
+      "C11",
+      "C12",
+      "C13"
+     ]
+    },
+    {
+     "name": "Enablers",
+     "items": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+     ]
+    },
+    {
+     "name": "Engagement",
+     "items": [
+      "C18",
+      "C19"
+     ]
+    },
+    {
+     "name": "Reinforcement",
+     "items": [
+      "C20",
+      "C21"
+     ]
+    },
+    {
+     "name": "Outcomes and learning",
+     "items": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+     ]
+    }
+   ]
+  },
+  "IEQ": {
+   "name": "Innovation Execution Quality",
+   "domains": [
+    {
+     "name": "IEQ",
+     "items": [
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "D10",
+      "D11",
+      "D12"
+     ]
+    }
+   ],
+   "min_items": 9,
+   "per_domain": 1
+  },
+  "FSC": {
+   "name": "Future Shaping Capability",
+   "min_items": 9,
+   "per_domain": 2,
+   "domains_first": true,
+   "domains": [
+    {
+     "name": "Sensing and framing",
+     "items": [
+      "K1",
+      "K2",
+      "K3"
+     ]
+    },
+    {
+     "name": "Alternative and preferred futures",
+     "items": [
+      "K4",
+      "K5",
+      "K6"
+     ]
+    },
+    {
+     "name": "Pathways and portfolio action",
+     "items": [
+      "K7",
+      "K8",
+      "K9"
+     ]
+    },
+    {
+     "name": "Agency and adaptive governance",
+     "items": [
+      "K10",
+      "K11",
+      "K12"
+     ]
+    }
+   ]
+  },
+  "PSI": {
+   "name": "PAS-aligned Sustainability Integration",
+   "min_pct": 0.7,
+   "per_domain": 2,
+   "domains": [
+    {
+     "name": "Context and scope",
+     "items": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ]
+    },
+    {
+     "name": "Leadership, policy and accountability",
+     "items": [
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+     ]
+    },
+    {
+     "name": "Planning",
+     "items": [
+      "E9",
+      "E10",
+      "E11",
+      "E12",
+      "E13"
+     ]
+    },
+    {
+     "name": "Support",
+     "items": [
+      "E14",
+      "E15",
+      "E16",
+      "E17",
+      "E18"
+     ]
+    },
+    {
+     "name": "Operations and value chain",
+     "items": [
+      "E19",
+      "E20",
+      "E21",
+      "E22",
+      "E23"
+     ]
+    },
+    {
+     "name": "Performance evaluation",
+     "items": [
+      "E24",
+      "E25",
+      "E26"
+     ]
+    },
+    {
+     "name": "Improvement",
+     "items": [
+      "E27",
+      "E28"
+     ]
+    }
+   ]
+  }
+ },
+ "bands": [
+  [
+   0,
+   24.99,
+   "Limited evidence"
+  ],
+  [
+   25,
+   49.99,
+   "Emerging"
+  ],
+  [
+   50,
+   74.99,
+   "Established"
+  ],
+  [
+   75,
+   100,
+   "Embedded and improving"
+  ]
+ ],
+ "scales": {
+  "scale": [
+   [
+    0,
+    "Not present"
+   ],
+   [
+    1,
+    "Planned/ ad hoc"
+   ],
+   [
+    2,
+    "Implemented in some areas"
+   ],
+   [
+    3,
+    "Consistently implemented"
+   ],
+   [
+    4,
+    "Monitored, evidenced and improved"
+   ],
+   [
+    "DK",
+    "Don't Know"
+   ],
+   [
+    "NA",
+    "Not Applicable"
+   ]
+  ],
+  "change": [
+   [
+    -2,
+    "−2 Strong deterioration"
+   ],
+   [
+    -1,
+    "−1 Deterioration"
+   ],
+   [
+    0,
+    "0 No change"
+   ],
+   [
+    1,
+    "+1 Improvement"
+   ],
+   [
+    2,
+    "+2 Strong improvement"
+   ],
+   [
+    "DK",
+    "Don't Know"
+   ],
+   [
+    "NA",
+    "Not Applicable"
+   ]
+  ],
+  "context": [
+   [
+    -2,
+    "−2 Strong negative"
+   ],
+   [
+    -1,
+    "−1 Negative"
+   ],
+   [
+    0,
+    "0 None"
+   ],
+   [
+    1,
+    "+1 Positive"
+   ],
+   [
+    2,
+    "+2 Strong positive"
+   ],
+   [
+    "DK",
+    "Don't Know"
+   ]
+  ],
+  "rating04": [
+   [
+    0,
+    "0"
+   ],
+   [
+    1,
+    "1"
+   ],
+   [
+    2,
+    "2"
+   ],
+   [
+    3,
+    "3"
+   ],
+   [
+    4,
+    "4"
+   ]
+  ],
+  "level": [
+   [
+    "E0",
+    "E0 No evidence available"
+   ],
+   [
+    "E1",
+    "E1 Informed observation/ anecdotal"
+   ],
+   [
+    "E2",
+    "E2 Documented qualitative evidence"
+   ],
+   [
+    "E3",
+    "E3 Quantitative operational evidence"
+   ],
+   [
+    "E4",
+    "E4 Structured evaluation evidence"
+   ],
+   [
+    "E5",
+    "E5 Advanced impact evidence"
+   ]
+  ]
+ },
+ "evidence_levels": [
+  [
+   "E0",
+   "No evidence available",
+   "Claim cannot currently be substantiated."
+  ],
+  [
+   "E1",
+   "Informed observation / anecdotal",
+   "Professional judgment or experience without documented corroboration."
+  ],
+  [
+   "E2",
+   "Documented qualitative evidence",
+   "Records, interviews, stakeholder feedback, case documentation, meeting records, etc."
+  ],
+  [
+   "E3",
+   "Quantitative operational evidence",
+   "KPIs, administrative data, financial records, utilization data, surveys, etc."
+  ],
+  [
+   "E4",
+   "Structured evaluation evidence",
+   "Baseline/ follow-up, trend analysis, structured evaluation, or credible comparison."
+  ],
+  [
+   "E5",
+   "Advanced impact evidence",
+   "Quasi-experimental, experimental, or otherwise robust causal-supportive evaluation."
+  ]
+ ],
+ "ccs": [
+  [
+   "Temporal sequence",
+   "Outcome predates action or timing unknown",
+   "Timing broadly consistent",
+   "Repeated measures show change after implementation with adequate lag"
+  ],
+  [
+   "Plausible mechanism",
+   "No articulated link",
+   "Mechanism described with partial evidence",
+   "Mechanism tested and observed across key steps"
+  ],
+  [
+   "Counterfactual/ comparator",
+   "No counterfactual",
+   "Reasoned benchmark or historical trend",
+   "Credible matched comparator, phased rollout, or experimental/ quasi-experimental design"
+  ],
+  [
+   "Alternative explanations",
+   "Not considered",
+   "Major factors identified",
+   "Factors measured/ tested and residual uncertainty documented"
+  ],
+  [
+   "Evidence quality",
+   "Anecdote or unsupported opinion",
+   "Defined internal data with limitations",
+   "Reproducible longitudinal data with independent review/ assurance"
+  ],
+  [
+   "Consistency and triangulation",
+   "Single conflicted source",
+   "Two broadly consistent sources",
+   "Multiple independent sources, including stakeholder evidence, converge"
+  ]
+ ],
+ "gics": [
+  [
+   "Implementation definition",
+   "Exposure undefined or assumed",
+   "Core components and dates partly documented",
+   "Components, timing, reach, intensity, and adaptations measured by unit and wave"
+  ],
+  [
+   "Implementation fidelity",
+   "No fidelity evidence",
+   "Partial reach or fidelity records",
+   "Validated reach, dose, fidelity, sustainment, and contamination measures"
+  ],
+  [
+   "Temporal evidence",
+   "No valid baseline",
+   "One baseline and follow-up",
+   "Adequate repeated measures aligned with the mechanism and lag"
+  ],
+  [
+   "Counterfactual",
+   "No comparison",
+   "Historical or reasoned benchmark",
+   "Credible matched, phased, randomized, or strong quasi-experimental comparison"
+  ],
+  [
+   "Pre-trends and balance",
+   "Not assessed",
+   "Limited baseline comparability",
+   "Pre-trends, balance, and identifying assumptions examined and reported"
+  ],
+  [
+   "Confounding and co-interventions",
+   "Not considered",
+   "Major factors listed",
+   "Major factors measured, modeled, and tested in sensitivity analyses"
+  ],
+  [
+   "Outcome data quality",
+   "Self-report or unstable measure",
+   "Defined records with known limitations",
+   "Stable reproducible measures with verified sources and uncertainty"
+  ],
+  [
+   "Robustness and independence",
+   "Single analysis by implementer",
+   "Some triangulation or internal review",
+   "Robustness, placebo, and subgroup checks plus independent review or replication"
+  ]
+ ],
+ "confidence_bands": [
+  [
+   0,
+   19.99,
+   "Insufficient evidence to make a contribution claim."
+  ],
+  [
+   20,
+   39.99,
+   "Weak indication; treat as a hypothesis requiring evidence."
+  ],
+  [
+   40,
+   59.99,
+   "Plausible contribution with material uncertainty."
+  ],
+  [
+   60,
+   79.99,
+   "Supported contribution; important alternatives have been examined."
+  ],
+  [
+   80,
+   100,
+   "Strongly supported contribution within the defined scope and period; still avoid causal certainty unless the design warrants it."
+  ]
+ ],
+ "glossary": [
+  {
+   "term": "Adaptation",
+   "def": "An intentional change to the planned implementation approach to make it more suitable for a particular unit, context, population, or emerging condition."
+  },
+  {
+   "term": "Adverse or Unintended Impact",
+   "def": "A negative or unexpected effect associated with an initiative, including effects on people, society, the environment, partners, or the organization."
+  },
+  {
+   "term": "Affected Stakeholder",
+   "def": "A person, group, community, organization, or other party that experiences, or may experience, an effect from an organizational decision, activity, or innovation."
+  },
+  {
+   "term": "Attribution",
+   "def": "The extent to which an observed outcome can credibly be said to have been caused by a particular initiative or intervention, rather than by other factors."
+  },
+  {
+   "term": "Attrition and Nonresponse",
+   "def": "Loss of participants, units, or data between evaluation waves, or failure to respond. Results can be distorted if those lost or not responding differ from those who remain."
+  },
+  {
+   "term": "Backcasting",
+   "def": "Starting with a preferred future state and working backward to identify the milestones, capabilities, decisions, and actions needed to move toward it."
+  },
+  {
+   "term": "Balance (Outcome Family)",
+   "def": "In the GInI-aligned outcome families, the mix of the innovation portfolio across units, innovation types, risk levels, and time horizons."
+  },
+  {
+   "term": "Baseline",
+   "def": "The starting value or condition measured before, or at the beginning of, an intervention so that later change can be assessed."
+  },
+  {
+   "term": "Benefit Realization",
+   "def": "The process of checking whether the expected value or benefits of an innovation were actually achieved after implementation."
+  },
+  {
+   "term": "Causal Claim",
+   "def": "A statement that one factor caused or materially produced another. In this survey, the permitted claim level (descriptive, temporal association, comparative, contribution, causal-supportive, or causal) must be limited by the quality of the evidence and the evaluation design actually available."
+  },
+  {
+   "term": "CInOrg and CGInO",
+   "def": "GInI organizational certification schemes referenced in this survey: CInOrg is the private-sector-oriented scheme, and CGInO is the government-oriented scheme. Recording them here does not make this survey an official assessment."
+  },
+  {
+   "term": "Clustering",
+   "def": "Grouping in the data, such as several respondents from the same unit, whose answers are likely to be related. Analysis must account for this so that results are not overstated."
+  },
+  {
+   "term": "Co-intervention",
+   "def": "Another program, policy, investment, restructuring, technology change, or external action occurring during the same period that may also influence the observed outcome."
+  },
+  {
+   "term": "Comparator",
+   "def": "See Comparison Unit or Group."
+  },
+  {
+   "term": "Comparison Unit or Group",
+   "def": "A reasonably similar unit, organization, population, or group used to help judge what might have happened without the initiative or with different implementation exposure."
+  },
+  {
+   "term": "Confounder",
+   "def": "A factor other than the initiative being assessed that may influence both implementation and the outcome, making the relationship harder to interpret."
+  },
+  {
+   "term": "Contamination",
+   "def": "A situation in which units intended for comparison are partly exposed to the implementation, making differences between groups harder to interpret."
+  },
+  {
+   "term": "Contribution",
+   "def": "A supported judgment that an initiative played a meaningful role in producing an outcome, while recognizing that other factors may also have contributed."
+  },
+  {
+   "term": "Conversions (Outcome Family)",
+   "def": "In the GInI-aligned outcome families, the quantity, quality, and value of opportunities that advance through the innovation pipeline toward implementation."
+  },
+  {
+   "term": "Cost Avoidance",
+   "def": "Costs that the organization or its stakeholders would otherwise have incurred and that were prevented by an initiative."
+  },
+  {
+   "term": "Counterfactual",
+   "def": "The best available indication of what would likely have happened in the absence of the initiative or intervention being assessed."
+  },
+  {
+   "term": "Covariate",
+   "def": "A measured characteristic, such as unit size, sector, or region, that is taken into account in an analysis so that comparisons are fairer."
+  },
+  {
+   "term": "Distributional Effects",
+   "def": "How benefits, costs, and harms are shared across different groups, including whether some groups gain while others bear burdens."
+  },
+  {
+   "term": "Don’t Know (DK)",
+   "def": "Response used when the respondent lacks sufficient knowledge to answer. It is never treated as a score of zero."
+  },
+  {
+   "term": "Ecosystem Impact",
+   "def": "A change in the wider network of partners, suppliers, institutions, markets, communities, or other actors with which the organization interacts."
+  },
+  {
+   "term": "Effect Estimate",
+   "def": "A numerical estimate of the size and direction of a change associated with an intervention, usually accompanied by information about uncertainty."
+  },
+  {
+   "term": "Efficiency (Outcome Family)",
+   "def": "In the GInI-aligned outcome families, innovation outputs relative to the inputs, time, and cost required, including how promptly weak initiatives are stopped or redirected."
+  },
+  {
+   "term": "Estimand",
+   "def": "A precise statement of the effect an evaluation intends to estimate: for which outcome, population, intervention or exposure, comparison, time period, and effect measure."
+  },
+  {
+   "term": "Evaluation Wave",
+   "def": "A defined point or period when implementation or outcome data are collected, such as baseline, six-month follow-up, or annual review."
+  },
+  {
+   "term": "Evidence Level / Evidence Strength",
+   "def": "The strength of the information available to support a claim, ranging in this survey from no evidence (E0) to advanced impact evidence (E5)."
+  },
+  {
+   "term": "Experimental Design",
+   "def": "An evaluation in which units are assigned at random to receive the implementation or not, allowing the strongest test of cause and effect."
+  },
+  {
+   "term": "Exposure",
+   "def": "See Implementation Exposure."
+  },
+  {
+   "term": "External Impact",
+   "def": "A meaningful positive or adverse change beyond the organization that is associated with an innovation initiative or program and matters to external stakeholders, society, the environment, markets, or public value."
+  },
+  {
+   "term": "External Outcome",
+   "def": "A change experienced outside the organization by customers, citizens, beneficiaries, communities, partners, markets, ecosystems, the environment, public institutions, or society."
+  },
+  {
+   "term": "External Relevance",
+   "def": "The extent to which the organization’s innovations continue to address real and changing needs, expectations, conditions, and challenges outside the organization."
+  },
+  {
+   "term": "Fidelity",
+   "def": "The extent to which implementation was delivered and used as originally intended, while documenting any justified adaptations."
+  },
+  {
+   "term": "Follow-Up",
+   "def": "A later measurement taken after implementation to determine whether conditions or outcomes changed over time."
+  },
+  {
+   "term": "Future Shaping",
+   "def": "A structured approach that uses foresight, preferred futures, pathways, portfolios, partnerships, and adaptive governance to influence future conditions rather than only predict them."
+  },
+  {
+   "term": "Implementation",
+   "def": "Putting the intended innovation-management approach into actual organizational practice, rather than only planning or documenting it."
+  },
+  {
+   "term": "Implementation Exposure",
+   "def": "The GInI-aligned practices, training, tools, governance, and support that a person, team, unit, or organization actually received or experienced."
+  },
+  {
+   "term": "Implementation Intensity",
+   "def": "How much implementation activity or support was received, such as training hours, coaching, workshops, tools, leadership attention, or frequency of use."
+  },
+  {
+   "term": "Implementation Reach",
+   "def": "How much of the intended population or organization was actually reached, for example the number or percentage of targeted people, roles, teams, or units participating."
+  },
+  {
+   "term": "Innovation Capability",
+   "def": "The organization’s practical ability to identify opportunities, develop and test ideas, make evidence- informed decisions, implement innovations, learn, and create value repeatedly."
+  },
+  {
+   "term": "Innovation Portfolio",
+   "def": "The collection of innovation initiatives managed together so that resources, risk, time horizons, strategic fit, and expected value can be balanced."
+  },
+  {
+   "term": "Inputs (Outcome Family)",
+   "def": "In the GInI-aligned outcome families, the quantity, quality, strategic value, and diversity of the opportunities and ideas entering the innovation pipeline, plus the participant time involved."
+  },
+  {
+   "term": "Intensity",
+   "def": "See Implementation Intensity."
+  },
+  {
+   "term": "Internal Outcome",
+   "def": "A result experienced mainly inside the organization, such as improved efficiency, capability, engagement, governance, cost, or decision quality."
+  },
+  {
+   "term": "Longitudinal Data",
+   "def": "Data collected from the same or comparable units at more than one point in time, allowing change and trends to be examined."
+  },
+  {
+   "term": "Material / Materiality",
+   "def": "Important enough to influence decisions because of the significance of an issue, impact, risk, opportunity, or stakeholder concern."
+  },
+  {
+   "term": "Measurement Equivalence",
+   "def": "Confidence that a measure means the same thing across groups, languages, units, or periods, so that comparisons between them are fair."
+  },
+  {
+   "term": "Minimum Detectable Effect",
+   "def": "The smallest change that an evaluation could reliably detect, given its sample size and data quality."
+  },
+  {
+   "term": "Mixed Methods",
+   "def": "An evaluation approach that combines quantitative evidence, such as indicators, with qualitative evidence, such as interviews or case documentation."
+  },
+  {
+   "term": "Not Applicable (NA)",
+   "def": "Response used when an item genuinely does not apply to the assessed unit or to the respondent’s role."
+  },
+  {
+   "term": "Not Available",
+   "def": "Response used when the requested information or evidence does not exist in the organization. It is recorded as an evidence gap and must not be estimated or reconstructed."
+  },
+  {
+   "term": "Outcome",
+   "def": "A change that follows from an activity or innovation, such as improved service quality, behavior, capability, wellbeing, resilience, or environmental performance. An outcome is different from an output, which is the immediate deliverable produced."
+  },
+  {
+   "term": "Outcome Orientation",
+   "def": "The balance of an initiative’s intended or observed outcomes between internal organizational benefit and external stakeholder or societal value."
+  },
+  {
+   "term": "Output",
+   "def": "The immediate product, service, process, policy, prototype, capability, or other deliverable produced by an innovation activity."
+  },
+  {
+   "term": "PAS 53002",
+   "def": "ISO/ UNDP PAS 53002:2024, a publicly available specification giving guidance on how organizations contribute to the United Nations Sustainable Development Goals. This survey is aligned with it for research use but does not assess conformity."
+  },
+  {
+   "term": "Placebo Test",
+   "def": "A check that applies the analysis where no effect should exist, such as a period before implementation. Finding an apparent effect there signals a problem with the method."
+  },
+  {
+   "term": "Practical Significance",
+   "def": "Whether an estimated change is large enough to matter in real terms to the organization or its stakeholders, regardless of statistical significance."
+  },
+  {
+   "term": "Pre-Intervention Trend",
+   "def": "The direction in which an outcome was already moving before implementation began. It must be considered before later change is attributed to the initiative."
+  },
+  {
+   "term": "Protocol Registration",
+   "def": "Recording an evaluation plan in a dated, unalterable form before results are known, so that any later changes are visible."
+  },
+  {
+   "term": "Public Value",
+   "def": "Value created for society or the public through better outcomes, access, trust, equity, resilience, policy effectiveness, or responsible use of public resources."
+  },
+  {
+   "term": "Quasi-Experimental Design",
+   "def": "An evaluation that does not use random assignment but uses careful comparison, such as phased rollout or matched units, to approximate a test of cause and effect."
+  },
+  {
+   "term": "Reach",
+   "def": "See Implementation Reach."
+  },
+  {
+   "term": "Robustness Check",
+   "def": "Repeating an analysis in different reasonable ways to see whether the conclusion still holds."
+  },
+  {
+   "term": "Scenario",
+   "def": "A coherent description of a plausible future used to explore uncertainty, test assumptions, and improve decisions; it is not a prediction."
+  },
+  {
+   "term": "SDG",
+   "def": "One of the 17 United Nations Sustainable Development Goals, each with specific targets and indicators."
+  },
+  {
+   "term": "Selection Bias",
+   "def": "Distortion that arises when the units receiving implementation differ systematically from those that do not, for reasons that also affect outcomes."
+  },
+  {
+   "term": "Sensitivity Analysis",
+   "def": "An analytical check that tests whether conclusions remain similar when assumptions, model specifications, data rules, or comparison choices are changed."
+  },
+  {
+   "term": "Signpost",
+   "def": "An observable development or indicator monitored because it may show that an assumed future condition is emerging or changing."
+  },
+  {
+   "term": "Societal Impact",
+   "def": "A broader change affecting communities or society, including social, economic, environmental, institutional, cultural, or wellbeing effects."
+  },
+  {
+   "term": "Standard Error",
+   "def": "A measure of how much an estimate would be expected to vary by chance. Smaller values indicate a more precise estimate."
+  },
+  {
+   "term": "Statistical Power",
+   "def": "The ability of a study or analysis to detect a meaningful effect when one truly exists, given the amount and quality of available data."
+  },
+  {
+   "term": "STEEPL / PESTEL",
+   "def": "Structured scanning frameworks covering social, technological, economic, environmental, political, and legal factors; STEEPL also includes ethical factors."
+  },
+  {
+   "term": "Stress Test",
+   "def": "Testing a strategy, initiative, or portfolio against different plausible future conditions to identify vulnerabilities, trade-offs, and adaptation needs."
+  },
+  {
+   "term": "Subgroup Analysis",
+   "def": "Examining results separately for particular groups, such as units, regions, or stakeholder types, to see whether effects differ between them."
+  },
+  {
+   "term": "Sustainment",
+   "def": "The extent to which an implemented practice continues to be used, supported, reviewed, and improved over time."
+  },
+  {
+   "term": "Trend Watching / Scouting",
+   "def": "Systematic monitoring of emerging developments, practices, and technologies, inside and outside the organization’s sector."
+  },
+  {
+   "term": "Trendcasting",
+   "def": "Projecting how identified trends may develop and combine, in order to inform future options and decisions."
+  },
+  {
+   "term": "Triangulation",
+   "def": "Checking a finding against several different sources or methods to see whether they point to the same conclusion."
+  },
+  {
+   "term": "Uncertainty Interval / Confidence Interval",
+   "def": "A numerical range showing the uncertainty around an estimated effect. Wider intervals generally indicate greater uncertainty."
+  },
+  {
+   "term": "Value Chain",
+   "def": "The full set of activities, suppliers, partners, and users involved in creating and delivering the organization’s products, services, or policies."
+  },
+  {
+   "term": "Verification / Assurance",
+   "def": "A review of evidence by someone sufficiently independent from the activity being assessed to check its accuracy, completeness, or credibility."
+  },
+  {
+   "term": "Weak Signal",
+   "def": "An early, incomplete, or emerging indication of a possible future change that may become strategically important."
+  }
+ ],
+ "external_classes": [
+  "INTERNAL",
+  "CUSTOMER/ USER",
+  "CITIZEN/ PUBLIC VALUE",
+  "BENEFICIARY/ COMMUNITY",
+  "PARTNER/ ECOSYSTEM",
+  "MARKET/ ECONOMIC",
+  "ENVIRONMENTAL",
+  "POLICY/ INSTITUTIONAL",
+  "WIDER SOCIETAL",
+  "OTHER"
+ ]
+}
