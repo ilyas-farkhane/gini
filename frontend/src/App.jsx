@@ -60,7 +60,9 @@ export default function App() {
         <span className="rule" />
         <img src="/gini.png" alt="Global Innovation Institute" />
       </div>
-      <div className="diamonds" aria-hidden="true"><i /><i /><i className="gold" /><i /></div>
+      {!isAdmin && !surveySess?.code
+        ? <p className="top-org">Islamic World Educational, Scientific and Cultural Organization</p>
+        : <div className="diamonds" aria-hidden="true"><i /><i /><i className="gold" /><i /></div>}
     </header>
     <div id="main-content" className="shell">
       {err && <div className="content-pane"><main className="solo"><p className="errmsg">Could not reach the survey service: {err}</p></main>{foot}</div>}
